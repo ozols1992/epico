@@ -87,6 +87,7 @@
                       <button type="submit" class="btn btn-primary">
                           Update
                       </button>
+                      <a href='{!! url('/profile'); !!}'>cancel</a>
                   </div>
               </div>
 
