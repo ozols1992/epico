@@ -8,4 +8,8 @@ use GuzzleHttp\Client;
 class epicoApiController extends Controller
 {
     //
+    public function callapi()
+    {
+      
+    }
 }
