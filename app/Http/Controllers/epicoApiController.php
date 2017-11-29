@@ -2,28 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use GuzzleHttp\Client as GuzzleHttpClient;
-use GuzzleHttp\Exception\RequestException;
-
-use Illuminate\Http\Request;
+use GuzzleHttp\Client;
+use GuzzleHttp\Message\Request;
+use GuzzleHttp\Message\Response;
 
 class epicoApiController extends Controller
 {
     //
     public function callapi()
-{
-      try {
+    {
+      $client = new Client();
+      $json = $client->get('http://epico.dk/umbraco/surface/home/AllAdvertising');
+      $obj = json_encode($json);
 
-           $client = new GuzzleHttpClient();
-
-           $apiRequest = $client->request('GET', 'http://epico.dk/umbraco/surface/home/AllAdvertising');
-
-          $content = json_decode($apiRequest->getBody()->getContents());
-
-      } catch (RequestException $re) {
-
-      }
-      return view('vacancies');
- }
+      return view('vacancies', compact('obj'));
+    }
 
 }
