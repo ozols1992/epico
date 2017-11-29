@@ -15,8 +15,26 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('msg', require('./components/msg.vue'));
+Vue.component('msglog', require('./components/msg_log.vue'));
+Vue.component('msgform', require('./components/msg_form.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        messages: []
+    },
+    methods: {
+        addmsg(msg){
+           
+           axios.post(location.href + '/messages', {'msg': msg}).then(response => {
+                this.messages.push(response.data);
+            }).catch(function(error){ alert(error); });
+        }
+    },
+    created(){
+        axios.get(location.href + '/messages').then(result => {
+           this.messages = result.data;
+        }).catch(function(error){alert(error)});
+    }
 });

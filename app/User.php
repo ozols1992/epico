@@ -30,4 +30,18 @@ class User extends Authenticatable
     public function vacancies() {
         return $this->hasMany(Vacancies::class);
     }
+    
+    public function messages(){
+        return $this->hasMany('App\message', 'id', 'author_id');
+    }
+
+    protected function applications(){
+        return $this->hasMany('App\message', 'author_id', 'id')
+                ->where('messages.type', '=', 'Application');
+    }
+    
+    public function hasApplied($vacancy){
+        return count($this->applications()
+                ->where('vacancy', '=', $vacancy->Id)->get()) > 0;
+    }
 }
