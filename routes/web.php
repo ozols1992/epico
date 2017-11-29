@@ -4,8 +4,8 @@
 
 use App\Http\Controllers\applicationController;
 
-Route::post('/test', function ($vacancyId){
-    return "ddsds";
+Route::get('/test', function (){
+    return view('test');
 });//->middleware('auth');
 
 
