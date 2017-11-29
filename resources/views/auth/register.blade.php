@@ -85,19 +85,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
-                            <label for="description" class="col-md-4 control-label">About you</label>
-
-                            <div class="col-md-6">
-                                <textarea name="description" class="form-control" id="description" cols="50" rows="3" required autofocus></textarea>
-
-                                @if ($errors->has('description'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('description') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+                        
 
                         <div class="form-group">
                             <label for="type" class="col-md-4 control-label">type</label>
