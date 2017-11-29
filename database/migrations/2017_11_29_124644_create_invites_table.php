@@ -17,7 +17,7 @@ class CreateInvitesTable extends Migration
             $table->increments('id');
             $table->integer('interviewsession_id')->unsigned();
             $table->integer('user_id')->unsigned();
-            $table->string('response')->default('None');
+            $table->string('response')->default('none');
         });
     }
 

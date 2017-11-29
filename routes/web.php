@@ -4,16 +4,21 @@
 
 use App\Http\Controllers\applicationController;
 
+Route::post('/test', function ($vacancyId){
+    return "ddsds";
+});//->middleware('auth');
+
+
+
 Route::view('/vacancies', 'vacancies/vacancies');
 Route::get('/vacancies/{Id}', 'vacancyController@vacancyView');
 Route::get('/vacancies/{Id}/apply', 'applicationController@getFormView');//->middleware('auth');
 
 Route::post('/vacancies/{Id}/apply', function ($vacancyId){
     $msg = request()->get('message');
-    $type = 'Application';
-    
     $c = new applicationController();
-    return $c->createMessage($vacancyId, $msg, $type) ? 
+    
+    return $c->createApplication($vacancyId, $msg) ? 
             redirect('/vacancies/' . $vacancyId . '/chat') : redirect('ERROR');
 });//->middleware('auth');
 
@@ -28,10 +33,9 @@ Route::get('/vacancies/{vacancyId}/chat/messages', function ($vacancyId){
 
 Route::post('/vacancies/{vacancyId}/chat/messages', function ($vacancyId){
     $msg = request()->get('msg');
-    $type = 'Reply';
-    
     $c = new applicationController();
-    return $c->createMessage($vacancyId, $msg, $type);
+    
+    return $c->createReply($vacancyId, $msg);
 });//->middleware('auth');
 
 //

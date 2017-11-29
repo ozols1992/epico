@@ -25,10 +25,13 @@ class message extends Model
         return new vacancie(array('id' => $this['id'], 'jobTitle' => 'Job Title'));
     }
     
+    public function invitation(){
+        return $this->type == 'invite' ? $this->hasOne('App\invites') : null;
+    }
+
     public static function getmessages($consultantId, $vacancyId, $columns = ['*'])
     {
         //consultant === User OR User === Admin
-        
         return self::with('author')
                 ->where(array('consultant_id' => $consultantId, 'vacancy' => $vacancyId))
                 ->get(is_array($columns) ? $columns : func_get_args());
