@@ -7,6 +7,7 @@
               @foreach ($obj as $job)
 
               <h3 class='jobtitle'>{{ $job->HeadLine }}</h3>
+              
 
               @endforeach
     @else
