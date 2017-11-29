@@ -9,8 +9,7 @@ Route::get('/test', function (){
 });//->middleware('auth');
 
 
-
-Route::view('/vacancies', 'vacancies/vacancies');
+//Route::view('/vacancies', 'vacancies/vacancies');
 Route::get('/vacancies/{Id}', 'vacancyController@vacancyView');
 Route::get('/vacancies/{Id}/apply', 'applicationController@getFormView');//->middleware('auth');
 
@@ -64,4 +63,4 @@ Route::prefix('admin')->group(function() {
 
 Route::get('admin', 'AdminController@display_users');
 
-//Route::get('vacancies', 'epicoApiController@callapi');
+Route::get('vacancies', 'epicoApiController@index');
