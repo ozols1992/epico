@@ -41,13 +41,13 @@ class CreateMessagesTable extends Migration
     
     protected function generateTestData(){
         
-        DB::table('users')->insert(array('id' => '99', 'name' => 'TestUser1', 'email' => 'test1@mail.com', 'password' => '1234'));
-        DB::table('users')->insert(array('id' => '88', 'name' => 'TestUser2', 'email' => 'test2@mail.com', 'password' => '1234'));
-        DB::table('users')->insert(array('id' => '77', 'name' => 'TestUser3', 'email' => 'test3@mail.com', 'password' => '1234'));
-        
-        DB::table('users')->insert(array('id' => '66', 'name' => 'TestAdmin1', 'email' => 'test4@mail.com', 'password' => '1234'));
-        DB::table('users')->insert(array('id' => '55', 'name' => 'TestAdmin2', 'email' => 'test5@mail.com', 'password' => '1234'));
-        
+        DB::table('users')->insert(array('id' => '99', 'available_or_not' => true, 'phone_nr' => '12345678', 'city' => 'Kolding', 'country' => 'Denmark', 'type' => 'freelance', 'title' => 'Title', 'description' => 'Lorem ipsum dolor sit amet', 'name' => 'TestUser1', 'email' => 'test1@mail.com', 'password' => '1234'));
+        DB::table('users')->insert(array('id' => '88', 'available_or_not' => true, 'phone_nr' => '12345678', 'city' => 'Kolding', 'country' => 'Denmark', 'type' => 'freelance', 'title' => 'Title', 'description' => 'Lorem ipsum dolor sit amet',  'name' => 'TestUser2', 'email' => 'test2@mail.com', 'password' => '1234'));
+        DB::table('users')->insert(array('id' => '77', 'available_or_not' => true, 'phone_nr' => '12345678', 'city' => 'Kolding', 'country' => 'Denmark', 'type' => 'freelance', 'title' => 'Title', 'description' => 'Lorem ipsum dolor sit amet',  'name' => 'TestUser3', 'email' => 'test3@mail.com', 'password' => '1234'));
+
+        DB::table('users')->insert(array('id' => '66', 'available_or_not' => false, 'phone_nr' => '12345678', 'city' => 'Kolding', 'country' => 'Denmark', 'type' => 'admin', 'title' => 'Title', 'description' => 'Lorem ipsum dolor sit amet',  'name' => 'TestAdmin1', 'email' => 'test4@mail.com', 'password' => '1234'));
+        DB::table('users')->insert(array('id' => '55', 'available_or_not' => false, 'phone_nr' => '12345678', 'city' => 'Kolding', 'country' => 'Denmark', 'type' => 'admin', 'title' => 'Title', 'description' => 'Lorem ipsum dolor sit amet',  'name' => 'TestAdmin2', 'email' => 'test5@mail.com', 'password' => '1234'));
+
         
         DB::table('messages')->insert(
                 array('vacancy' => 'X', 'type' => 'Application', 'vacancy' => '4f9803f8-a2c3-e711-8125-70106faac681', 'consultant_id' => '99', 
