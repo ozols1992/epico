@@ -22,4 +22,4 @@ Route::prefix('admin')->group(function() {
 
 Route::get('admin', 'AdminController@display_users');
 
-Route::get('vacancies', 'epicoApiController@callapi');
+Route::get('vacancies', 'epicoApiController@index');
