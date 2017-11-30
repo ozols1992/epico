@@ -9,7 +9,7 @@ Route::get('/test', function (){
 });//->middleware('auth');
 
 
-//Route::view('/vacancies', 'vacancies/vacancies');
+Route::view('/vacanciestest', 'vacancies/vacancies');
 Route::get('/vacancies/{Id}', 'vacancyController@vacancyView');
 Route::get('/vacancies/{Id}/apply', 'applicationController@getFormView');//->middleware('auth');
 

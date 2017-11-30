@@ -43127,10 +43127,6 @@ exports.clearImmediate = clearImmediate;
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(42)
-}
 var normalizeComponent = __webpack_require__(5)
 /* script */
 var __vue_script__ = __webpack_require__(45)
@@ -43139,7 +43135,7 @@ var __vue_template__ = __webpack_require__(46)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = injectStyle
+var __vue_styles__ = null
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -43175,46 +43171,8 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(43);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(4)("085b72cc", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2da5767a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./msg.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2da5767a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./msg.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n#msgcontainer{\n    margin-top: 20px;\n}\n.messagewrapper{\n    border: 1px solid silver;\n    padding: 5px;\n    background-color: silver;\n    white-space: pre-wrap;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 42 */,
+/* 43 */,
 /* 44 */
 /***/ (function(module, exports) {
 
@@ -43284,6 +43242,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['msg']
@@ -43303,33 +43262,31 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "messagewrapper" }, [
-      _vm.msg.type === "Application"
-        ? _c("div", { attrs: { id: "UserStuff" } }, [
-            _c(
-              "table",
-              { staticStyle: { "border-bottom": "1px solid black" } },
-              [
-                _c("tr", [
-                  _vm._m(0, false, false),
-                  _vm._v(" "),
-                  _c("td", [
-                    _vm._v("Name: " + _vm._s(_vm.msg.author.name)),
-                    _c("br"),
-                    _vm._v(
-                      "\n                        E-mail: " +
-                        _vm._s(_vm.msg.author.email)
-                    ),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "#" } }, [_vm._v("See Profile")]),
-                    _c("br"),
-                    _vm._v("\n                                ...etc.")
-                  ])
-                ]),
+      _vm.msg.type == "Application"
+        ? _c("div", { staticClass: "UserStuff" }, [
+            _c("table", [
+              _c("tr", [
+                _vm._m(0, false, false),
                 _vm._v(" "),
-                _vm._m(1, false, false)
-              ]
-            )
+                _c("td", [
+                  _vm._v(
+                    "\n                        Name: " +
+                      _vm._s(_vm.msg.author.name)
+                  ),
+                  _c("br"),
+                  _vm._v(
+                    "\n                        E-mail: " +
+                      _vm._s(_vm.msg.author.email)
+                  ),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("See Profile")]),
+                  _c("br")
+                ])
+              ]),
+              _vm._v(" "),
+              _vm._m(1, false, false)
+            ])
           ])
         : _vm._e(),
       _vm._v(" "),
@@ -43350,7 +43307,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("td", { staticStyle: { width: "65px" } }, [
+    return _c("td", [
       _c("img", {
         staticStyle: {
           border: "1px solid gray",

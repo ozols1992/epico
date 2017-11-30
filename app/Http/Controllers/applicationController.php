@@ -10,15 +10,15 @@ use App\message;
 class applicationController extends Controller{
     
     public function createReply($vacancy, $msg, $consultantId = null){
-        return $this->createMessage($vacancy, $msg, 'reply', $consultantId);
+        return $this->createMessage($vacancy, $msg, 'Reply', $consultantId);
     }
     
     public function createApplication($vacancy, $msg, $consultantId = null){
-       return $this->createMessage($vacancy, $msg, 'application', $consultantId);
+       return $this->createMessage($vacancy, $msg, 'Application', $consultantId);
     }
     
     public function createInvite($vacancy, $msg, $consultantId = null){
-        //return $this->createMessage($vacancy, $msg, 'invite', $consultantId);
+        //return $this->createMessage($vacancy, $msg, 'Invite', $consultantId);
     }
 
     private function createMessage($vacancy, $msg, $type, $consultantId = null){

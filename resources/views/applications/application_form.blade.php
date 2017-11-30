@@ -1,4 +1,8 @@
-<h3>{{ $vacancy->HeadLine }} Application</h3>
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+   <h3>{{ $vacancy->HeadLine }} Application</h3>
 
 <div id="UserStuff">
     <table>
@@ -9,11 +13,10 @@
     </table>
 </div>
 <form action="" method="post">
-    Info field 1: <input type="text"><br/>
-    Info field 2: <input type="text"><br/>
-    Info field 3: <input type="text"><br/>
-    Info field 4: <input type="text"><br/>
     <textarea name="message" style="width: 225px; height: 150px;"></textarea><br/>
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <input type="submit" value="Apply">
 </form>
+</div>
+
+@endsection
