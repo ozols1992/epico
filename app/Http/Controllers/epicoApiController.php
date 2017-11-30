@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class epicoApiController extends Controller
 {
+
     //
     public function index()
     {
@@ -15,4 +16,5 @@ class epicoApiController extends Controller
 
       return view('vacancies', compact('obj'));
     }
+
 }
