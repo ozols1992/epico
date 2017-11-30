@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 
 class epicoApiController extends Controller
@@ -15,5 +16,5 @@ class epicoApiController extends Controller
 
       return view('vacancies', compact('obj'));
     }
-
+    protected $dates = ['JobBeginDate', 'Applicationdeadline'];
 }
