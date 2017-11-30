@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\vacancy;
 use App\message;
+use Auth;
 
 class applicationController extends Controller{
     
@@ -22,7 +23,7 @@ class applicationController extends Controller{
     }
 
     private function createMessage($vacancy, $msg, $type, $consultantId = null){
-        $user = User::findOrFail(99); //Auth::user();
+        $user = Auth::user();
         if($consultantId === null){
             $consultantId = $user->id;
         }
@@ -50,20 +51,20 @@ class applicationController extends Controller{
     }
     
     public function getFormView($vacancyId){
-        $user = User::findOrFail(99); //Auth::user();
+        $user = Auth::user();
         $vacancy = vacancy::get($vacancyId);
-        //User == admin
+        //false aka. User == admin
         if(!false && !$user->hasApplied($vacancy)){
             return view('applications/application_form', ['vacancy' => $vacancy, 'User' => $user]);
         }
         
-        //User == admin
+        //false aka. User == admin
         $message = (false) ? "You already work for us" : "You have already applied";
         return view('applications/application_NotAllowed', ["message" => $message]);
     }
     
     public function getApplicationAndReplies($vacancyId, $consultantId = null){
-        $user = User::findOrFail(99);
+        $user = Auth::user();
         $consultantId = $consultantId === null ? $user->id : $consultantId;
         
         //User === admin

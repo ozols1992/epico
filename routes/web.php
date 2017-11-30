@@ -19,23 +19,23 @@ Route::post('/vacancies/{Id}/apply', function ($vacancyId){
 
     return $c->createApplication($vacancyId, $msg) ?
             redirect('/vacancies/' . $vacancyId . '/chat') : redirect('ERROR');
-});//->middleware('auth');
+})->middleware('auth');
 
 Route::get('/vacancies/{vacancyId}/chat', function ($vacancyId){
 return view('applications/applications_log', ['vacancy' => \App\vacancy::get($vacancyId)]);
-});//->middleware('auth');
+})->middleware('auth');
 
 Route::get('/vacancies/{vacancyId}/chat/messages', function ($vacancyId){
     $c = new applicationController();
     return $c->getApplicationAndReplies($vacancyId);
-});//->middleware('auth');
+})->middleware('auth');
 
 Route::post('/vacancies/{vacancyId}/chat/messages', function ($vacancyId){
     $msg = request()->get('msg');
     $c = new applicationController();
 
     return $c->createReply($vacancyId, $msg);
-});//->middleware('auth');
+})->middleware('auth');
 
 //
 

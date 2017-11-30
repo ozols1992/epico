@@ -1,5 +1,11 @@
+.profileimg{
+    width: 100%;
+    border:1px solid silver;
+}
+
 .profileimgholder_small{
     width: 70px;
+    padding: 5px;
 }
 
  #msglog{
