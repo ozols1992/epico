@@ -3,7 +3,6 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Http\Controllers\epicoApiController;
 
 class vacancy extends Model
 {
@@ -15,8 +14,6 @@ class vacancy extends Model
     
     protected static $url = "http://epico.dk/umbraco/surface/home/AllAdvertising";
     
-    //protected static $API = new epicoApiController();?
-
     private static function getAll_Json(){
         return json_decode(file_get_contents(self::$url), true);
     }

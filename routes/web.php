@@ -16,8 +16,8 @@ Route::get('/vacancies/{Id}/apply', 'applicationController@getFormView');//->mid
 Route::post('/vacancies/{Id}/apply', function ($vacancyId){
     $msg = request()->get('message');
     $c = new applicationController();
-    
-    return $c->createApplication($vacancyId, $msg) ? 
+
+    return $c->createApplication($vacancyId, $msg) ?
             redirect('/vacancies/' . $vacancyId . '/chat') : redirect('ERROR');
 });//->middleware('auth');
 
@@ -33,7 +33,7 @@ Route::get('/vacancies/{vacancyId}/chat/messages', function ($vacancyId){
 Route::post('/vacancies/{vacancyId}/chat/messages', function ($vacancyId){
     $msg = request()->get('msg');
     $c = new applicationController();
-    
+
     return $c->createReply($vacancyId, $msg);
 });//->middleware('auth');
 
@@ -63,4 +63,8 @@ Route::prefix('admin')->group(function() {
 
 Route::get('admin', 'AdminController@display_users');
 
+<<<<<<< HEAD
+//Route::get('vacancies', 'epicoApiController@index');
+=======
 Route::get('vacancies', 'epicoApiController@index');
+>>>>>>> 64ad4a7157f76f2fc72004998c91c25d9a547553

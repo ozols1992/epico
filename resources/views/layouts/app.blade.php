@@ -30,7 +30,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img style="height: 100%;" src="img/logo.png"/>
+                        <img src="img/logo.png"/>
                     </a>
                 </div>
 
@@ -81,6 +81,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
