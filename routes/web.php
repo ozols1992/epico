@@ -63,8 +63,8 @@ Route::prefix('admin')->group(function() {
 
 Route::get('admin', 'AdminController@display_users');
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 //Route::get('vacancies', 'epicoApiController@index');
-=======
+//=======
 Route::get('vacancies', 'epicoApiController@index');
->>>>>>> 64ad4a7157f76f2fc72004998c91c25d9a547553
+//>>>>>>> 64ad4a7157f76f2fc72004998c91c25d9a547553
