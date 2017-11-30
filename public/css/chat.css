@@ -1,0 +1,36 @@
+.profileimgholder_small{
+    width: 70px;
+}
+
+ #msglog{
+    margin: 5px;
+}
+
+.messagewrapper{
+    background-color: white;
+    padding: 10px;
+    border:1px solid silver;
+}
+
+.userstuff{
+    border-bottom: 1px solid silver;
+    margin-bottom: 15px;
+}
+
+#msgcontainer{
+    margin: 10px;
+}
+
+.msgform{
+    width: 100%;
+}
+    
+.msgtextinput{
+    width: 100%;
+    height: 80px;
+}
+
+.msgsendbutton{
+    width: 100%;
+    height: 80px;
+}

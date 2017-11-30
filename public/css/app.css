@@ -8,21 +8,6 @@
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
-.messagewrapper{
-    border:1px solid silver;
-    background-color: white;
-    padding: 10px;
-}
-
-.UserStuff{
-    border-bottom: 1px solid silver;
-    margin-bottom: 15px;
-}
-
-#msgcontainer{
-    margin: 10px;
-}
-
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;

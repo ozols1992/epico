@@ -11,9 +11,3 @@ export default {
     props: ['messages']
 }
 </script>
-
-<style lang="css">
- #msglog{
-    margin: 5px;
-}
-</style>

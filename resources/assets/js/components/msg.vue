@@ -4,10 +4,10 @@
             <small>{{ msg.created_at }}</small>
         </div>
         <div class="messagewrapper" >
-            <div class="UserStuff" v-if=" msg.type == 'Application'">
+            <div class="userstuff" v-if=" msg.type == 'Application'">
                 <table>
                     <tr>
-                        <td><img alt="UserImg" src="http://kultbox.dk/wp-content/uploads/2016/02/Bj%C3%B8rn-Jensen_avatar_1454709982-200x200.jpg" style="border: 1px solid gray; height: 70px; width: 60px;"></td>
+                        <td class='profileimgholder_small'><img alt="UserImg" src="http://kultbox.dk/wp-content/uploads/2016/02/Bj%C3%B8rn-Jensen_avatar_1454709982-200x200.jpg" style="border: 1px solid gray; height: 70px; width: 60px;"></td>
                         <td>
                             Name: {{ msg.author.name }}<br/>
                             E-mail: {{ msg.author.email }}<br/>

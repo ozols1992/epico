@@ -26,17 +26,3 @@ export default {
     }
 }
 </script>
-
-<style lang="css">
-    .msgform{
-        width: 100%;
-    }
-    .msgtextinput{
-        width: 100%;
-        height: 80px;
-    }
-    .msgsendbutton{
-        width: 100%;
-        height: 80px;
-    }
-</style>
