@@ -57,6 +57,11 @@ Route::prefix('admin')->group(function() {
     Route::get('/', 'AdminController@index')->name('admin.dashboard');
 });
 
-Route::get('admin', 'AdminController@display_users');
 
-Route::get('vacancies', 'epicoApiController@index');
+Route::get('admin', 'AdminController@display_users');
+//<<<<<<< HEAD
+//Route::get('vacancies', 'epicoApiController@index');
+//=======
+Route::get('vacancies', 'epicoApiController@vacanciesApi');
+//>>>>>>> 64ad4a7157f76f2fc72004998c91c25d9a547553
+Route::get('/', 'epicoApiController@newsfeedApi');
