@@ -22,6 +22,7 @@ class epicoApiController extends Controller
     {
       $xml = simplexml_load_file("http://mesterm.dk/simpleproxy/buddyshop_dk/newsfeed");
 
+
       return view('welcome', compact('xml'));
     }
 }
