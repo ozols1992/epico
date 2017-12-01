@@ -9,7 +9,7 @@
       <h3>{{ $news->attributes()->headline }}</h3>
       <h4>{{ $news->attributes()->contactEmail }}</h4>
       <h4>{{ $news->attributes()->publishDate }}</h4>
-      <div>{{ $news->div->div->div->div->asXML() }}</div>
+      <div>{{ $news->div->div->div->div->asXML() }}</div><br>
 
 
     @endforeach
