@@ -4,10 +4,6 @@
 
 use App\Http\Controllers\applicationController;
 
-Route::get('/test', function (){
-    return view('test');
-});//->middleware('auth');
-
 
 Route::view('/vacanciestest', 'vacancies/vacancies');
 Route::get('/vacancies/{Id}', 'vacancyController@vacancyView');
@@ -63,8 +59,4 @@ Route::prefix('admin')->group(function() {
 
 Route::get('admin', 'AdminController@display_users');
 
-//<<<<<<< HEAD
-//Route::get('vacancies', 'epicoApiController@index');
-//=======
 Route::get('vacancies', 'epicoApiController@index');
-//>>>>>>> 64ad4a7157f76f2fc72004998c91c25d9a547553

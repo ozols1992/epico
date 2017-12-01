@@ -17,16 +17,8 @@ class message extends Model
                 ->withDefault(['name' => 'Deleted User']);
     }
     
-    public function consultant(){
-        //return $this->belongsTo(User::class, 'consultantId');
-    }
-    
     public function vacancy(){
         return new vacancie(array('id' => $this['id'], 'jobTitle' => 'Job Title'));
-    }
-    
-    public function invitation(){
-        return $this->type == 'invite' ? $this->hasOne('App\invites') : null;
     }
 
     public static function getmessages($consultantId, $vacancyId, $columns = ['*'])
