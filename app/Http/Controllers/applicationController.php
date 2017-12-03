@@ -7,6 +7,7 @@ use App\User;
 use App\vacancy;
 use App\message;
 use Auth;
+use App\Events\messagePosted;
 
 class applicationController extends Controller{
     
@@ -40,6 +41,8 @@ class applicationController extends Controller{
                 ]);
                 
                 $msg->author = $user;
+                event(new messagePosted($msg));
+                
                 return $msg;
                 
             }

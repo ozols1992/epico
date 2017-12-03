@@ -3,7 +3,7 @@
 //Lene
 
 use App\Http\Controllers\applicationController;
-
+use App\Events\messagePosted;
 
 Route::view('/vacanciestest', 'vacancies/vacancies');
 Route::get('/vacancies/{Id}', 'vacancyController@vacancyView');
@@ -17,7 +17,7 @@ Route::post('/vacancies/{Id}/apply', function ($vacancyId){
             redirect('/vacancies/' . $vacancyId . '/chat') : redirect('ERROR');
 })->middleware('auth');
 
-Route::get('/vacancies/{vacancyId}/chat', function ($vacancyId){
+Route::get('/vacancies/{vacancyId}/chat/', function ($vacancyId){
 return view('applications/applications_log', ['vacancy' => \App\vacancy::get($vacancyId)]);
 })->middleware('auth');
 
@@ -29,8 +29,8 @@ Route::get('/vacancies/{vacancyId}/chat/messages', function ($vacancyId){
 Route::post('/vacancies/{vacancyId}/chat/messages', function ($vacancyId){
     $msg = request()->get('msg');
     $c = new applicationController();
-
-    return $c->createReply($vacancyId, $msg);
+    $m = $c->createReply($vacancyId, $msg);
+    return $m;
 })->middleware('auth');
 
 //

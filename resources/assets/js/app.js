@@ -20,21 +20,6 @@ Vue.component('msglog', require('./components/msg_log.vue'));
 Vue.component('msgform', require('./components/msg_form.vue'));
 
 const app = new Vue({
-    el: '#app',
-    data: {
-        messages: []
-    },
-    methods: {
-        addmsg(msg){
-           
-           axios.post(location.href + '/messages', {'msg': msg}).then(response => {
-                this.messages.push(response.data);
-            }).catch(function(error){ alert(error); });
-        }
-    },
-    created(){
-        axios.get(location.href + '/messages').then(result => {
-           this.messages = result.data;
-        }).catch(function(error){alert(error)});
-    }
+    el: '#app'
 });
+

@@ -18,6 +18,8 @@
         "lodash": "^4.17.4"
     },
     "dependencies": {
+        "laravel-echo": "^1.3.2",
+        "pusher-js": "^4.2.1",
         "vue": "^2.5.9",
         "vue-loader": "^13.5.0"
     }
