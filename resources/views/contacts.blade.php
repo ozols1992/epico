@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="container">
-    <h2>EPICO Contact</h2><br>
+    <h2>EPICO Contacts</h2><br>
 
     @foreach ($xml->ContactList->Contact as $contacts)
-    {!! $contacts->attributes()->image !!}
+    <img src="{!! $contacts->attributes()->image !!}">
     <h4>{!! $contacts->attributes()->name !!}</h4>
     <h5>{!! $contacts->attributes()->phone !!}</h5>
     <h5>{!! $contacts->attributes()->email !!}</h5>
