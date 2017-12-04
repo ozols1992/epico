@@ -17,12 +17,11 @@
                     <p class='advertisingtype'>Looking for freelancer</p>
                     @endif
                     <p class='begindate'>Job start: {{ $job->JobBeginDate }}</p>
-                    <p class='begindate'>Job start: {!! $job->JobBeginDate !!}</p>
                     <p class='deadline'>Application deadline: {{ $job->Applicationdeadline }}</p>
                     @if ($job->Duration !== null)
                     <p class='duration'>Job duration: {{ $job->Duration }}</p>
                     @endif
-                </div>
+                </div>  
                 <div class="maininfo2">
                     <img class="addressjob" src="img/Address.png" alt=""/>
                     @if ($job->Location !== null)
