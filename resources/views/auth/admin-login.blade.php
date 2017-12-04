@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">ADMIN Login</div>
+<div class="accounttop1">    
+    <img class="toplogo" src="img/For_dark_&_red_background.png" alt=""/>    
+</div>
+<div class="accounttop2"></div>
 
                 <div class="panel-body">
+                    <h1 class="registertitle">Admin Log In<span class="dot">.</span></h1>
                     <form class="form-horizontal" method="POST" action="{{ route('admin.login.submit') }}">
                         {{ csrf_field() }}
 
@@ -42,15 +42,11 @@
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Login
+                    <span class="fa fa-chevron-right"></span>
                                 </button>
+                           
                             </div>
                         </div>
 
                     </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection
