@@ -9,21 +9,22 @@ use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
-use App\message;
 
 class messagePosted implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
     
-    public $message;
+    public $message, $vacancy, $consultantId;
 /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(message $message)
+    public function __construct($message, $vacancy, $consultantId)
     {
         $this->message = $message;
+        $this->vacancy = $vacancy;
+        $this->consultantId = $consultantId;
     }
 
     /**
@@ -33,6 +34,6 @@ class messagePosted implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PresenceChannel('chatroom');
+        return new PresenceChannel('chat.' . $this->vacancy, '.' . $this->consultantId);
     }
 }

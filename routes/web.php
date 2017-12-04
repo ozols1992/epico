@@ -17,8 +17,9 @@ Route::post('/vacancies/{Id}/apply', function ($vacancyId){
             redirect('/vacancies/' . $vacancyId . '/chat') : redirect('ERROR');
 })->middleware('auth');
 
-Route::get('/vacancies/{vacancyId}/chat/', function ($vacancyId){
-return view('applications/applications_log', ['vacancy' => \App\vacancy::get($vacancyId)]);
+Route::get('/vacancies/{vacancyId}/chat', function ($vacancyId){
+return view('applications/applications_log'
+        , ['vacancy' => \App\vacancy::get($vacancyId), 'consultantId' => Auth::user()->id ]);
 })->middleware('auth');
 
 Route::get('/vacancies/{vacancyId}/chat/messages', function ($vacancyId){

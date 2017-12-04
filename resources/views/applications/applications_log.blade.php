@@ -28,9 +28,12 @@ const chat = new Vue({
     created(){
         axios.get(location.href + '/messages').then(result => {
            this.messages = result.data;
-        }).catch(function(error){alert(error)});
+        }).catch(function(error){alert(error);});
         
-        Echo.private('chatroom');
+        Echo.private('chat.{{ $vacancy->Id . "." . $consultantId }}')
+                .listen('messagePosted', (e) => {
+                    alert('ss');
+                });
     }
 });
 </script>
