@@ -17,7 +17,7 @@
         @endif
           <p class='country'>{{ $job->Country }}</p>
           <p class='description'>{{ $job->Description }}</p>
-          <p class='begindate'>Job start: {{ $job->JobBeginDate }}</p>
+          <p class='begindate'>Job start: {!! date('Y-m-d', strtotime($job->JobBeginDate)) !!}</p>
           <p class='deadline'>Application deadline: {{ $job->Applicationdeadline }}</p>
         @if ($job->Duration !== null)
           <p class='duration'>Job duration: {{ $job->Duration }}</p>
