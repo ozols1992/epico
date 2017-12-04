@@ -14,6 +14,8 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/chat.css') }}" rel="stylesheet">
         <link href="{{ asset('css/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet">
+        <script type="text/javascript" src="{{ URL::to('js/scripts.js') }}"></script>
+
     </head>
     <body>
         <div id="app">
@@ -46,7 +48,7 @@
                         <li>
                             <a href="{{ route('logout') }}"
                                onclick="event.preventDefault();
-                                       document.getElementById('logout-form').submit();">
+    document.getElementById('logout-form').submit();">
                                 Logout
                             </a>
 
@@ -66,5 +68,21 @@
 
         <!-- Scripts -->
         <script src="js/app.js"></script>
+        <script type="text/javascript">
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    };
+}
+        </script>
     </body>
 </html>
