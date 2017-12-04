@@ -25,4 +25,12 @@ class epicoApiController extends Controller
 
       return view('welcome', compact('xml'));
     }
+
+    public function contactsApi()
+    {
+      $xml = simplexml_load_file("http://mesterm.dk/simpleproxy/buddyshop_dk/contacts-feed");
+
+
+      return view('contacts', compact('xml'));
+    }
 }
