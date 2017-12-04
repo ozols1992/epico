@@ -9,6 +9,10 @@
         <div class="job">
             <h3 class='jobtitle'>{{ $job->HeadLine }}</h3>
             <div class="accordion">
+                <div class="expandbutton">
+                    <span class="fa fa-chevron-up"></span>
+                    <span class="fa fa-chevron-down"></span>
+                </div>
                 <div class="maininfo1">
                     @if ($job->AdvertisingType == "Fast")
                     <p class='advertisingtype'>Looking for permanent employee</p>

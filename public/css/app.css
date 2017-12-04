@@ -638,6 +638,7 @@ nav a:hover, nav a:focus {
     width: 100%;
     text-align: center;
     margin-top: 40px;
+    font-family: avenirBlack;
 }
 
 .dropdown {
@@ -658,7 +659,7 @@ nav a:hover, nav a:focus {
 
 div.accordion {
     cursor: pointer;
-    padding: 16px;
+    padding-right: 16px;
     width: 100%;
     border: none;
     text-align: left;
@@ -678,6 +679,7 @@ div.panel {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     border: none;
+    margin: 0;
 }
 
 .job {
@@ -702,4 +704,27 @@ div.panel {
     margin-right: auto;
     margin-bottom: 15px;
     height: 30px;
+}
+
+.location, .country {
+    text-align: center;
+    font-family: avenirBook;
+}
+
+.maininfo1 {
+    font-family: avenirBook;
+}
+
+.expandbutton {
+    width: 65px;
+    background-color: #A7183F;
+    color: white;
+}
+
+.expandbutton .fa-chevron-up,
+.expandbutton .fa-chevron-down{
+    color: white!important;
+    font-size: 30px!important;
+    display: block;
+    text-align: center;
 }
