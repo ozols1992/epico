@@ -5,6 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <h1>Update your profile</h1>
+
           <form class="form-horizontal" method="POST" action="{!! url('/editUser'); !!}">
               {{ csrf_field() }}
 
