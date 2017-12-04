@@ -1,8 +1,10 @@
 <?php
 //Lene
 use App\Http\Controllers\applicationController;
+use App\Events\messagePosted;
+
 Route::get('/test', function (){
-    return view('test');
+    event(new messagePosted("", 1, 1));
 });
 
 Route::view('/vacanciestest', 'vacancies/vacancies');
@@ -19,7 +21,7 @@ Route::post('/vacancies/{Id}/apply', function ($vacancyId){
 })->middleware('auth');
 
 Route::get('/vacancies/{vacancyId}/chat', function ($vacancyId){
-return view('applications/applications_log', ['vacancy' => \App\vacancy::get($vacancyId)]);
+return view('applications/applications_log', ['vacancy' => \App\vacancy::get($vacancyId), 'consultantId' => Auth::user()->id]);
 })->middleware('auth');
 
 Route::get('/vacancies/{vacancyId}/chat/messages', function ($vacancyId){

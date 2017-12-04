@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('BROADCAST_DRIVER', 'pusher'),
+    'default' => 'pusher',
 
     /*
     |--------------------------------------------------------------------------
@@ -27,16 +27,17 @@ return [
     | each available type of connection are provided inside this array.
     |
     */
+
     
     'connections' => [
 
         'pusher' => [
             'driver' => 'pusher',
-            'key' => env('75179851ae3747672339'),
-            'secret' => env('15de56e14a66f2029a83'),
-            'app_id' => env('439160'),
+            'key' => env('PUSHER_APP_KEY'),
+            'secret' => env('PUSHER_APP_SECRET'),
+            'app_id' => env('PUSHER_APP_ID'),
             'options' => [
-                'cluster' => 'eu',
+                'cluster' => 'mt1',
                 'encrypted' => false
             ]
         ],

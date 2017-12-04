@@ -51,6 +51,8 @@ if (token) {
 
 window.Echo = new Echo({
      broadcaster: 'pusher',
-     key: '75179851ae3747672339',
-     cluser: 'eu'
+     key: 'e6e536103d1031ec4f99',
+     cluster: 'mt1',
+     encrypted: false,
+     authEndpoint: "epico/public/broadcasting/auth"
  });

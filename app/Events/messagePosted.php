@@ -13,9 +13,10 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 class messagePosted implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
+
     
     public $message, $vacancy, $consultantId;
-/**
+    /**
      * Create a new event instance.
      *
      * @return void
@@ -37,7 +38,11 @@ class messagePosted implements ShouldBroadcast
         return new PrivateChannel('chat.' . $this->vacancy . '.' . $this->consultantId);
     }
     
-    /*public function broadcastAs(){
+    public function  broadcastAs(){
         return 'chat.' . $this->vacancy . '.' . $this->consultantId;
-    }*/
+    }
+    
+    public function broadcastWith() {
+        return ['message' => $this->message, 'author' => $this->message->author];
+    }
 }
