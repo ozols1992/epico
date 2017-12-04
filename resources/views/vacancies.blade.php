@@ -16,11 +16,8 @@
                     @if ($job->AdvertisingType == "Freelance")
                     <p class='advertisingtype'>Looking for freelancer</p>
                     @endif
-<<<<<<< HEAD
                     <p class='begindate'>Job start: {{ $job->JobBeginDate }}</p>
-=======
                     <p class='begindate'>Job start: {!! $job->JobBeginDate !!}</p>
->>>>>>> df56b97abc27725e6038c54a40b4ad67462b31af
                     <p class='deadline'>Application deadline: {{ $job->Applicationdeadline }}</p>
                     @if ($job->Duration !== null)
                     <p class='duration'>Job duration: {{ $job->Duration }}</p>
@@ -34,11 +31,8 @@
                 </div>
             </div>
             <div class="panel">
-<<<<<<< HEAD
                 <p class='description'>{{ $job->Description }}</p>               
-=======
                 <p class='description'>{{ $job->Description }}</p>
->>>>>>> df56b97abc27725e6038c54a40b4ad67462b31af
                 <p class='contactjob'>Contact: {{ $job->SearchEmail }}</p>
                 @if ($job->Footer !== null)
                 <p class='jobfooter'>{{ $job->Footer }}</p>
@@ -49,10 +43,6 @@
         @else
         <h3 class="notloggedin">You need to log in. <a href="/login">Click here to login</a></h3>
         @endif
-<<<<<<< HEAD
-=======
-
->>>>>>> df56b97abc27725e6038c54a40b4ad67462b31af
     </div>
 </div>
 
