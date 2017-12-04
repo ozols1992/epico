@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     @if (Auth::check())
-      <h1>Job vacancies</h1><br>
+      <h1 class="sitetitle">Job vacancies</h1><br>
         @foreach ($obj as $job)
           <h3 class='jobtitle'>{{ $job->HeadLine }}</h3>
         @if ($job->AdvertisingType == "Fast")
