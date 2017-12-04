@@ -5,10 +5,6 @@
 use App\Http\Controllers\applicationController;
 use App\Events\messagePosted;
 
-Route::get('/test', function (){
-    event(new messagePosted("", 1, 1));
-});
-
 Route::view('/vacanciestest', 'vacancies/vacancies');
 Route::get('/vacancies/{Id}', 'vacancyController@vacancyView');
 Route::get('/vacancies/{Id}/apply', 'applicationController@getFormView');//->middleware('auth');

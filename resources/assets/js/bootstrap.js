@@ -53,6 +53,5 @@ window.Echo = new Echo({
      broadcaster: 'pusher',
      key: 'e6e536103d1031ec4f99',
      cluster: 'mt1',
-     encrypted: false,
-     authEndpoint: "epico/public/broadcasting/auth"
+     encrypted: false
  });
