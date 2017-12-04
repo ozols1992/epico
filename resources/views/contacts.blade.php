@@ -5,7 +5,7 @@
     @if (Auth::check())
     <h2>EPICO news</h2><br>
 
-    @foreach ($xml->NewsAll->News  as $news)
+    @foreach ($xml->NewsAll->News  as $contact)
 
       <h3>{!! $news->attributes()->headline !!}</h3>
       <h4>{!! $news->attributes()->contactEmail !!}</h4>
