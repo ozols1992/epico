@@ -18,5 +18,6 @@ Broadcast::channel('App.User.{id}', function ($user, $id) {
 });
 
 Broadcast::channel('chat.{vacancyId}.{consultantId}', function ($user, $vacancyId, $consultantId) {
-    return true;
+    //   is admin?
+    return true || $user->id == $consultantId;
 });
