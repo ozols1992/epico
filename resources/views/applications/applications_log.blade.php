@@ -1,8 +1,12 @@
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<div id="app"></div>
 <script src="{{ asset('js/app.js') }}" charset="utf-8">
 </script>
+
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
    <h3>{{ $vacancy->HeadLine }} Application</h3>
 <a href="./">View</a> - <a href="./apply">Apply</a>
