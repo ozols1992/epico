@@ -27,18 +27,18 @@ return [
     | each available type of connection are provided inside this array.
     |
     */
-
+    
     'connections' => [
 
         'pusher' => [
             'driver' => 'pusher',
-            'key' => env('PUSHER_APP_KEY'),
-            'secret' => env('PUSHER_APP_SECRET'),
-            'app_id' => env('PUSHER_APP_ID'),
+            'key' => env('75179851ae3747672339'),
+            'secret' => env('15de56e14a66f2029a83'),
+            'app_id' => env('439160'),
             'options' => [
-                'encrypted' => true,
-                'cluster' => 'eu'
-            ],
+                'cluster' => 'eu',
+                'encrypted' => false
+            ]
         ],
 
         'redis' => [

@@ -22,6 +22,10 @@ return view('applications/applications_log'
         , ['vacancy' => \App\vacancy::get($vacancyId), 'consultantId' => Auth::user()->id ]);
 })->middleware('auth');
 
+Route::get('/test', function (){
+    event(new messagePosted(['message' => 'Hejsa'], 1, 100));
+})->middleware('auth');
+
 Route::get('/vacancies/{vacancyId}/chat/messages', function ($vacancyId){
     $c = new applicationController();
     return $c->getApplicationAndReplies($vacancyId);

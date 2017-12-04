@@ -41,7 +41,7 @@ class applicationController extends Controller{
                 ]);
                 
                 $msg->author = $user;
-                event(new messagePosted($msg, $vacancy, $consultantId));
+                //event(new messagePosted($msg, $vacancy, $consultantId));
                 
                 return $msg;
                 

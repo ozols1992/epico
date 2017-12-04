@@ -51,5 +51,6 @@ if (token) {
 
 window.Echo = new Echo({
      broadcaster: 'pusher',
-     key: '75179851ae3747672339'
+     key: '75179851ae3747672339',
+     cluser: 'eu'
  });

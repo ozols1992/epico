@@ -34,6 +34,10 @@ class messagePosted implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PresenceChannel('chat.' . $this->vacancy, '.' . $this->consultantId);
+        return new PrivateChannel('chat.' . $this->vacancy . '.' . $this->consultantId);
     }
+    
+    /*public function broadcastAs(){
+        return 'chat.' . $this->vacancy . '.' . $this->consultantId;
+    }*/
 }

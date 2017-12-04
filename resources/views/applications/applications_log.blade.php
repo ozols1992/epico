@@ -31,8 +31,8 @@ const chat = new Vue({
         }).catch(function(error){alert(error);});
         
         Echo.private('chat.{{ $vacancy->Id . "." . $consultantId }}')
-                .listen('messagePosted', (e) => {
-                    alert('ss');
+                .listen('.messagePosted', (e) => {
+                    alert('Hello!');
                 });
     }
 });
