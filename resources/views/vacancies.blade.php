@@ -24,6 +24,7 @@
                     @endif
                 </div>
                 <div class="maininfo2">
+                    <img class="addressjob" src="img/Address.png" alt=""/>
                     @if ($job->Location !== null)
                     <p class='location'>{{ $job->Location }}</p>
                     @endif
