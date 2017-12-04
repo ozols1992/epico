@@ -420,12 +420,12 @@ button[type=submit] span {
     color: #D1D1D1;
 }
 
-input {
+.menuinput {
     position: fixed;
     opacity: 0;
 }
 
-label {
+-menulabel {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -434,20 +434,19 @@ label {
     background: none;
     cursor: pointer;
 }
-label::before {
+.menulabel::before {
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(18, 67, 100, 0.6);
     content: '';
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-label .burger {
+.menulabel .burger {
     position: fixed;
     top: 40px;
     left: 40px;
@@ -471,8 +470,8 @@ label .burger {
     padding: 0;
     transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-label .burger::before,
-label .burger .bar, label .burger::after {
+.menulabel .burger::before,
+.menulabel .burger .bar, .menulabel .burger::after {
     position: absolute;
     left: 0;
     display: block;
@@ -482,20 +481,20 @@ label .burger .bar, label .burger::after {
     content: '';
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-label .burger .bar {
+.menulabel .burger .bar {
     top: 44%;
 }
-label .burger::before {
+.menulabel .burger::before {
     top: 0;
     transform-origin: top left;
 }
-label .burger::after {
+.menulabel .burger::after {
     bottom: 0;
     transform-origin: bottom left;
 }
 
-input:focus + label .burger,
-label:hover .burger {
+.menuinput:focus + .menulabel .burger,
+.menulabel:hover .burger {
     opacity: .75;
 }
 

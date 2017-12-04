@@ -17,8 +17,8 @@
     </head>
     <body>
         <div id="app">
-            <input type="checkbox" id="navcheck" role="button" title="menu">
-            <label for="navcheck" aria-hidden="true" title="menu">
+            <input class="menuinput" type="checkbox" id="navcheck" role="button" title="menu">
+            <label class="menulabel" for="navcheck" aria-hidden="true" title="menu">
                 <div class="menubackground">
                     <span class="burger">
                         <span class="bar">
