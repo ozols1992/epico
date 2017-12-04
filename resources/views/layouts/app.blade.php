@@ -67,7 +67,7 @@
         </div>
 
         <!-- Scripts -->
-        <script src="js/app.js"></script>
+        
         <script type="text/javascript">
 var acc = document.getElementsByClassName("accordion");
 var i;
