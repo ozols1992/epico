@@ -10,14 +10,23 @@ class message extends Model
     protected $fillable = [
         'message', 'vacancy', 'type', 'consultant_id', 'author_id'
     ];
-
+    
+    
     public function author(){
         return $this->belongsTo('App\User', 'author_id')
                 ->withDefault(['name' => 'Deleted User']);
     }
     
+    public function consultant(){
+        //return $this->belongsTo(User::class, 'consultantId');
+    }
+    
     public function vacancy(){
-        return new vacancy(array('id' => $this['id'], 'jobTitle' => 'Job Title'));
+        return new vacancie(array('id' => $this['id'], 'jobTitle' => 'Job Title'));
+    }
+    
+    public function invitation(){
+        return $this->type == 'invite' ? $this->hasOne('App\invites') : null;
     }
 
     public static function getmessages($consultantId, $vacancyId, $columns = ['*'])
