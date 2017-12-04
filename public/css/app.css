@@ -642,4 +642,5 @@ nav a:hover, nav a:focus {
 
 .dropdown {
     list-style-type: none;
+    color: white;
 }
