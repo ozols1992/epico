@@ -56,6 +56,7 @@
                         </li>
                     </ul>
                 </li>
+                <a href='{!! url('/contacts'); !!}'>contacts</a>
                 @endguest
             </nav>
             <div class="content">
