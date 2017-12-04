@@ -11892,9 +11892,10 @@ window.Pusher = __webpack_require__(40);
 
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
   broadcaster: 'pusher',
-  key: '75179851ae3747672339',
+  key: 'e6e536103d1031ec4f99',
+  cluster: 'mt1',
   encrypted: false,
-  cluster: 'eu'
+  authEndpoint: "epico/public/broadcasting/auth"
 });
 
 /***/ }),
