@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     @if (Auth::check())
-    <h2>EPICO news</h2>
+    <h2>EPICO news</h2><br>
 
     @foreach ($xml->NewsAll->News  as $news)
 

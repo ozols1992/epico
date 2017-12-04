@@ -29,10 +29,10 @@
             </label>
             <nav id="menu">
                 @guest
-                <a href='{!! url('/vacancies'); !!}'>Job vacancies</a>
                 <a href="{{ route('login') }}">Login</a>
                 <a href="{{ route('register') }}">Register</a>
                 @else
+                <a href='{!! url('/'); !!}'>News</a>
                 <a href='{!! url('/vacancies'); !!}'>Job vacancies</a>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
