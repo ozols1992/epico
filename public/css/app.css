@@ -21,6 +21,10 @@ a img {
     width: auto;
 }
 .starttop {
+    position: relative;
+    z-index: 0;
+    width: 110%;
+    left: -5%;
     background-color: #A7183F;
     padding-bottom: 90px;
     padding-top: 90px;
@@ -85,6 +89,7 @@ a img {
 }
 
 .startmid {
+    position: relative;
     width: 80px;
     height: 80px;
     border-radius: 40px;
@@ -172,6 +177,9 @@ a img {
 }
 
 .accounttop1 {
+    position: relative;
+    width: 110%;
+    left: -5%;
     background-color: #A7183F;    
     height: 100px;
     padding-top: 35px;
@@ -390,6 +398,11 @@ button[type=submit] {
     line-height: 20px;
     margin-top: 50px;
     padding: 6px;
+}
+
+button[type=submit]:hover {
+    background-color: #890528;
+    border-color: #890528;
 }
 button[type=submit] span {
     margin-left: 5px;
