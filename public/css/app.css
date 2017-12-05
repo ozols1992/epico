@@ -816,3 +816,39 @@ div.panel {
     color: black;
 
 }
+.profiletop{
+    background-color: #A7183F;
+}
+.profileinformation{
+    color: white;
+}
+
+.cancel {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.profiletop{
+    background-color: #A7183F;
+    display: flex;
+    height: 180px;
+}
+.profileinformation{
+    color: white;
+    font-family: avenirBook;	
+
+}
+.usertitle{
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-family: avenirBook;
+
+}
+.profilename {
+	font-family: avenirBlack;
+}
