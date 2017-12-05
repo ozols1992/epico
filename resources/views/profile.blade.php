@@ -16,6 +16,7 @@
                 <input id="imageupload" type="file" name="avatar">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 
+                
             </form>
             <div class="profileinformation">
             <h2 class="profilename">{{ Auth::user()->name }}</h2><br>
