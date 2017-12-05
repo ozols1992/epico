@@ -34,6 +34,8 @@
             
             <h3>About me:</h3>
             <h5>{{ Auth::user()->description }}</h5>
+            <h3>Email</h3>
+            <h5>{{ Auth::user()->email }}</h5>
             <h3>Address:</h3>
             <h5>{{ Auth::user()->country }}</h5>
             <h5>{{ Auth::user()->city }}</h5>
