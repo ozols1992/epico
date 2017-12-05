@@ -619,10 +619,8 @@ nav a:hover, nav a:focus {
     transform-origin: left center;
     -webkit-filter: blur(2px);
     filter: blur(2px);
-    /* quite laggy :S */
 }
 
-/* helper */
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -652,14 +650,13 @@ nav a:hover, nav a:focus {
 }
 
 .jobs {
-    width: 75%;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
 }
 
 div.accordion {
     cursor: pointer;
-    padding-right: 16px;
     width: 100%;
     border: none;
     text-align: left;
@@ -669,7 +666,8 @@ div.accordion {
 }
 
 div.accordion.active, button.accordion:hover {
-    background-color: #ccc;
+    background-color: #595959;
+    color: white;
 }
 
 div.panel {
@@ -680,6 +678,7 @@ div.panel {
     transition: max-height 0.2s ease-out;
     border: none;
     margin: 0;
+    font-family: avenirBook;
 }
 
 .job {
@@ -691,11 +690,11 @@ div.panel {
 .jobtitle {
     margin-left: 15px;
     font-family: avenirBlack;
+    margin-bottom: 25px;
 }
 
 .accordion {
     display: flex;
-    justify-content: space-between;
 }
 
 .addressjob {
@@ -716,9 +715,13 @@ div.panel {
 }
 
 .expandbutton {
-    width: 65px;
+    max-width: 70px!important;
+    min-width: 70px!important;
     background-color: #A7183F;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .expandbutton .fa-chevron-up,
@@ -726,5 +729,41 @@ div.panel {
     color: white!important;
     font-size: 30px!important;
     display: block;
+    text-align: center;
+    width: auto;
+    height: 30px;
+    line-height: 30px!important;
+}
+
+.expandbutton .fa-chevron-up {
+    margin-top: 30px;
+}
+.expandbutton .fa-chevron-down {
+    margin-bottom: 30px;
+}
+.accordionflex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+.accordioncontent {
+    width: 100%;
+}
+.maininfo2 {
+    width: 150px;
+}
+
+.description, .jobfooter {
+    margin-top: 30px;
+    color: #595959;
+    font-size: 16px;
+}
+
+.contactjob, emaillink {
+    margin-top: 20px;
+    font-size: 30px;
+}
+.contactjob {
     text-align: center;
 }
