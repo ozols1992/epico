@@ -801,3 +801,18 @@ div.panel {
     display: block;
     margin-bottom: 100px;
 }
+
+.profiletop{
+    background-color: #A7183F;
+    display: flex;
+    height: 180px;
+}
+.profileinformation{
+    color: white;
+}
+.usertitle{
+	display: flex;
+	justify-content: center;
+	color: white;
+
+}

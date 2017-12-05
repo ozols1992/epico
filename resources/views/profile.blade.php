@@ -18,8 +18,12 @@
             <h5>{{ Auth::user()->type }}</h5><br>
             
         </div>
-         <h5>{{ Auth::user()->title }}</h5>   
+           
         </div>
+       
+
+        <h5 class="usertitle">{{ Auth::user()->title }}</h5> 
+        <div class="accounttop2"></div> 
             
 
        
