@@ -35,24 +35,27 @@
        
             <div class="userprofileinformation">
             
-            <h3>About me</h3>
+            <span class="editiconemail">
+                    <img src="img/email.png"></span>
             <h5>{{ Auth::user()->description }}</h5>
             <span class="editiconemail">
                     <img src="img/email.png"></span>
-            <h3>email:</h3>
+
+            
             <h5>{{ Auth::user()->email }}</h5>
             <span class="adressicon">
                     <img src="img/address.png"></span>
-            <h3>Address:</h3>
-            <h5>{{ Auth::user()->country }}</h5>
-            <h5>{{ Auth::user()->city }}</h5>
-            <h5>{{ Auth::user()->address }}</h5>
-            <h5>{{ Auth::user()->zip_code }}</h5>
+            <div class="profilelocation">
+            <p>{{ Auth::user()->country }}</p>
+            <p>{{ Auth::user()->city }}</p>
+            <p>{{ Auth::user()->address }}</p>
+            <p>{{ Auth::user()->zip_code }}</p>
+            </div>
             <span class="phonenumber">
                     <img src="img/phone.png"></span>
-            <h3>Phone nr.</h3>
-            <h5>{{ Auth::user()->phone_nr }}</h5>
             
+            <h5>{{ Auth::user()->phone_nr }}</h5>
+          
         </div>
             
         @else

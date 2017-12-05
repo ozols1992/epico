@@ -48,7 +48,7 @@
 
             <div class="radiosection">
                 <div class="hoversection">
-                    <input id="type1" type="radio" class="form-control" name="type" value="Freelancer">
+                    <input id="type1" type="radio" class="form-control" name="type" value="Freelancer" required>
                     <label for="type1">Freelancer</label>
                     <div class="check"></div>
                 </div>
@@ -89,7 +89,7 @@
 
             <div class="radiosection">
                 <div class="hoversection">
-                    <input id="available_or_not1" type="radio" class="form-control" name="available_or_not" value="Available">
+                    <input id="available_or_not1" type="radio" class="form-control" name="available_or_not" value="Available" required>
                     <label for="available_or_not1">Available</label>
                     <div class="check"></div>
                 </div>
