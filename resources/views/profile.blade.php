@@ -62,4 +62,6 @@
             <h3 class="notloggedin">You need to log in. <a href="/login">Click here to login</a></h3>
         @endif
     </div>
+    <br>
+    <br>
 @endsection
