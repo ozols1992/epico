@@ -3,24 +3,26 @@
 @section('content')
 <div class="container">
     @if (Auth::check())
-    <h2>EPICO news</h2><br>
+    <h1 class="sitetitle">EPICO News</h1><br>
+    <div class="newscontainer">
+        @foreach ($xml->NewsAll->News  as $news)
+        <div class="news">
+            <h1 class="newsheadline">{!! $news->attributes()->headline !!}</h1>
+            <div class="newsinfo">
+                <p class="author">Author: <a href="mailto:{!! $news->attributes()->contactEmail !!}">{!! $news->attributes()->contactEmail !!}</a></p>
+                <p class="newsdate">Published at: {!! $news->attributes()->publishDate !!}</p>
+            </div>
+            <div class="newscontent">{!! $news->div->div->div->div->asXML() !!}</div><br>
+        </div>
 
-    @foreach ($xml->NewsAll->News  as $news)
-
-      <h3>{!! $news->attributes()->headline !!}</h3>
-      <h4>{!! $news->attributes()->contactEmail !!}</h4>
-      <h4>Published at: {!! $news->attributes()->publishDate !!}</h4>
-      <div>{!! $news->div->div->div->div->asXML() !!}</div><br>
-
-
-    @endforeach
-
+        @endforeach
+    </div>
     @else
     <div class="starttop">
         <img class="startlogo" src="img/For_dark_&_red_background.png" alt=""/>
 
-            <a class="startlogin" href="/register">Register</a>
-            <a class="startlogin" href="/login">Sign in</a>
+        <a class="startlogin" href="/register">Register</a>
+        <a class="startlogin" href="/login">Sign in</a>
 
     </div>
     <div class="startmid">

@@ -578,48 +578,48 @@ nav a:nth-child(6) {
 }
 
 nav a:hover {
-  text-decoration: none;
-  color: #FFF;
+    text-decoration: none;
+    color: #FFF;
 }
 
 nav a::before, nav a::after {
-  width: 100%;
-  height:100%;
-  z-index: 3;
-  content:'';
-  position: absolute;
-  top:0;
-  left:0;
-  box-sizing: border-box;
-  -webkit-transform: scale(0);
-  transition: 0.5s;
+    width: 100%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    -webkit-transform: scale(0);
+    transition: 0.5s;
 }
 nav a::before {
-  border-bottom: 3px solid #FFF;
-  border-left: 3px solid #FFF;
-  -webkit-transform-origin: 100% 0%;
+    border-bottom: 3px solid #FFF;
+    border-left: 3px solid #FFF;
+    -webkit-transform-origin: 100% 0%;
 }
 
 nav a::after {
-  border-top: 3px solid #FFF;
-  border-right: 3px solid #FFF;
-  -webkit-transform-origin: 0% 100%;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid #FFF;
+    -webkit-transform-origin: 0% 100%;
 }
 
 nav a::before {
-  border-bottom: 3px solid #FFF;
-  border-left: 0;
-  -webkit-transform-origin: 0% 100%;
+    border-bottom: 3px solid #FFF;
+    border-left: 0;
+    -webkit-transform-origin: 0% 100%;
 }
 
 nav a::after {
-  border-top: 0;
-  border-right: 0;
-  -webkit-transform-origin: 50% 50%;
+    border-top: 0;
+    border-right: 0;
+    -webkit-transform-origin: 50% 50%;
 }
 
 nav a:hover::after, nav a:hover::before {
-  -webkit-transform: scale(1);
+    -webkit-transform: scale(1);
 }
 
 .content {
@@ -984,21 +984,25 @@ div.panel {
     color: white;
     font-family: avenirBook;
     font-size: 15px;
-
 }
+
 .profilename {
     font-family: avenirBlack;
     height: 18px;
 }
+
 #uploadform {
     margin-right: 25px;
 }
+
 .imagecontainer{
     margin-left: 25px;
 }
+
 h2.profilename{
     margin-top: 25px;
 }
+
 .buttoneditprofile{
     margin-left: auto;
     display: block;
@@ -1017,6 +1021,61 @@ h2.profilename{
 
 }
 .typeofwork{
-	font-family: avenirBook;
-	font-size: 19px;
+    font-family: avenirBook;
+    font-size: 19px;
+}
+
+.newscontent .col-md-12 {
+    border-bottom: 3px solid #A7183F;
+    margin-bottom: 100px;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.newsheadline {
+    width: 100%;
+    text-align: center;
+    font-family: avenirBlack;
+    text-transform: capitalize;
+    font-size: 26px;
+}
+
+.newscontainer{
+    margin-top: 100px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.newsinfo{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsdate {
+    font-size: 14px;
+}
+
+.author {
+    font-size: 18px;
+    color: black;
+}
+
+.author a {
+    cursor: pointer!important;
+    color: #3097d1!important;
+}
+.author a:hover {
+    text-decoration: underline!important;
+}
+
+.newscontainer a{
+    text-decoration: none;
+    color: black;
+    cursor: text;
+}
+
+.newscontent {
+    color: black;
 }
