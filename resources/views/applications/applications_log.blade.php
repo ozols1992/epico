@@ -10,8 +10,8 @@
     <msglog :messages="messages"></msglog>
     <msgform v-on:msgsent="addmsg"></msgform>
 </div>
-<script src="{{ asset('./js/app.js') }}" type='text/javascript'>  
-</script>
+<script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+<script src="{{ asset('./js/app.js') }}" type='text/javascript'></script>
 <script>
     const chat = new Vue({
         el: '#chat',
@@ -30,6 +30,18 @@
             axios.get(location.href + '/messages').then(result => {
                this.messages = result.data;
             }).catch(function(error){alert(error);});
+            
+            //Pusher.logToConsole = true;
+
+            //var pusher = new Pusher('e6e536103d1031ec4f99', {
+            //  encrypted: true
+            //});
+
+            //var channel = pusher.subscribe('chat.{{ $vacancy->Id . "." . $consultantId }}');
+            //channel.bind('messagePosted', function(data) {
+            //  alert(data.message);
+            //});
+            
         }
     }); 
 </script>
