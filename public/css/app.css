@@ -1006,7 +1006,7 @@ h2.profilename{
 .buttoneditprofile{
     margin-left: auto;
     display: block;
-    margin-right: 70px;
+    margin-right: 7%;
     margin-top: 5px;
     background-color: transparent;
     border: none;
@@ -1015,11 +1015,21 @@ h2.profilename{
 .userprofileinformation{
     margin-left: 40px;
     margin-top: 50px;
+    display: flex;
+	flex-wrap: wrap;
 }
 .userprofileinformation h3{
     font-family: avenirBlack;
+    width: 100%;
 
 }
+.userprofileinformation h5{
+	width: 90%;
+}
+.userprofileinformation span{
+	width: 10%;
+}
+
 .typeofwork{
     font-family: avenirBook;
     font-size: 19px;
@@ -1101,4 +1111,8 @@ label{
 div[class="col-md-6 col-md-offset-4"], div[class="col-md-8 col-md-offset-4"]{
     margin-left: 0!important;
     width: 100%;
+}
+
+.profilelocation{
+	width: 90%;
 }
