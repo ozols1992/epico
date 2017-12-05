@@ -767,3 +767,6 @@ div.panel {
 .contactjob {
     text-align: center;
 }
+#imageupload {
+	display: none;
+}

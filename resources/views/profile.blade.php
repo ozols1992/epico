@@ -1,14 +1,17 @@
 @extends('layouts.app')
 
-@section('content')
+@section('content')<div class="accounttop1">    
+       
+</div>
+<div class="accounttop2"></div>
     <div class="container">
         @if (Auth::check())
-            <img src="/img/avatars/{{ Auth::user()->avatar }}" style=" height: 150px; width: 150px;">
-            <form enctype="multipart/form-data" action="/profile" method="post">
-                <label>update profile picture</label>
-                <input type="file" name="avatar">
+            
+            <form id="uploadform" enctype="multipart/form-data" action="/profile" method="post">
+                <label for="imageupload"><img src="/img/avatars/{{ Auth::user()->avatar }}" style=" height: 150px; width: 150px;"></label>
+                <input id="imageupload" type="file" name="avatar">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <input type="submit" class="pull-right btn btn-sm btn-primary">
+                
             </form>
             <h2>{{ Auth::user()->name }}'s profile</h2><br>
             <h3>My title:</h3>
@@ -30,7 +33,7 @@
                 <a href='{!! url('/editUser'); !!}'>Update my profile</a>
             </button>
         @else
-            <h3>You need to log in. <a href="/login">Click here to login</a></h3>
+            <h3 class="notloggedin">You need to log in. <a href="/login">Click here to login</a></h3>
         @endif
     </div>
 @endsection

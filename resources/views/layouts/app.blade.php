@@ -66,6 +66,10 @@ for (i = 0; i < acc.length; i++) {
         }
     };
 }
+document.getElementById("imageupload").onchange = function() {
+    document.getElementById("uploadform").submit();
+};
         </script>
+
     </body>
 </html>
