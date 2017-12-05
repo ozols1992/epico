@@ -942,3 +942,41 @@ div.panel {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+.profiletop{
+    background-color: #A7183F;
+    display: flex;
+    height: 180px;
+}
+.profileinformation{
+    color: white;
+    font-family: avenirBook;	
+
+}
+.usertitle{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: avenirBook;
+
+}
+.profilename {
+    font-family: avenirBlack;
+    height: 18px;
+}
+#uploadform {
+	margin-right: 25px;
+}
+.imagecontainer{
+	margin-left: 25px;
+}
+h2.profilename{
+	margin-top: 25px;
+}
+ .buttoneditprofile{
+	margin-left: auto;
+	display: block;
+	margin-right: 70px;
+	margin-top: 5px;
+	background-color: transparent;
+	border: none;
+}

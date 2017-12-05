@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
-@section('content')<div class="accounttop1">    
+@section('content')<div class="accounttop1">   
+<button class="buttoneditprofile">
+                <a href='{!! url('/editUser'); !!}'><span class="editicon">
+                    <img src="img/editicon.png"></span></a>
+            </button> 
        
 </div>
 
@@ -28,7 +32,7 @@
 
        
             
-            <h5>{{ Auth::user()->title }}</h5>
+            
             <h3>About me:</h3>
             <h5>{{ Auth::user()->description }}</h5>
             
@@ -42,9 +46,7 @@
             <h5>{{ Auth::user()->phone_nr }}</h5>
             <h3>Current status</h3>
             <h5>{{ Auth::user()->available_or_not }}</h5>
-            <button>
-                <a href='{!! url('/editUser'); !!}'>Update my profile</a>
-            </button>
+            
         @else
             <h3 class="notloggedin">You need to log in. <a href="/login">Click here to login</a></h3>
         @endif
