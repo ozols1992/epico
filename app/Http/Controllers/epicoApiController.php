@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request as HttpRequest;
 
 
-
 class epicoApiController extends Controller
 {
 
@@ -14,8 +13,8 @@ class epicoApiController extends Controller
     {
       $json = file_get_contents('http://epico.dk/umbraco/surface/home/AllAdvertising');
       $obj = json_decode($json);
-
-      return view('vacancies', compact('obj'));
+      
+      return view('vacancies',compact('obj'));
     }
 
     public function newsfeedApi()
