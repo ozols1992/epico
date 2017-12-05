@@ -18,7 +18,7 @@
             </form>
             <div class="profileinformation">
             <h2 class="profilename">{{ Auth::user()->name }}</h2><br>
-            <h5>{{ Auth::user()->type }}</h5><br>
+            <h5 class="typeofwork">{{ Auth::user()->type }}</h5><br>
             
         </div>
            
