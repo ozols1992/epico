@@ -3,18 +3,23 @@
 @section('content')<div class="accounttop1">    
        
 </div>
-<div class="accounttop2"></div>
+
     <div class="container">
         @if (Auth::check())
-            
+            <div class="profiletop">
             <form id="uploadform" enctype="multipart/form-data" action="/profile" method="post">
-                <label for="imageupload"><img src="/img/avatars/{{ Auth::user()->avatar }}" style=" height: 150px; width: 150px;"></label>
+                <div class="imagecontainer"><label for="imageupload"><img class="responsivepic" src="/img/avatars/{{ Auth::user()->avatar }}"></label></div>
                 <input id="imageupload" type="file" name="avatar">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 
             </form>
-            <h2>{{ Auth::user()->name }}'s profile</h2><br>
-            <h3>My title:</h3>
+        
+            <h2>{{ Auth::user()->name }}</h2><br>
+        </div>
+            <h5>{{ Auth::user()->title }}</h5>
+            <div class="accounttop2"></div>
+       
+            
             <h5>{{ Auth::user()->title }}</h5>
             <h3>About me:</h3>
             <h5>{{ Auth::user()->description }}</h5>
