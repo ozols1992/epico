@@ -847,12 +847,7 @@ div.panel {
 .profileinformation{
     color: white;
 }
-.usertitle{
-    display: flex;
-    justify-content: center;
-    color: black;
 
-}
 .profiletop{
     background-color: #A7183F;
 }
@@ -879,13 +874,7 @@ div.panel {
     font-family: avenirBook;	
 
 }
-.usertitle{
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: avenirBook;
 
-}
 .profilename {
     font-family: avenirBlack;
 }
@@ -994,6 +983,7 @@ div.panel {
     justify-content: center;
     color: white;
     font-family: avenirBook;
+    font-size: 15px;
 
 }
 .profilename {
@@ -1025,4 +1015,8 @@ h2.profilename{
 .userprofileinformation h3{
     font-family: avenirBlack;
 
+}
+.typeofwork{
+	font-family: avenirBook;
+	font-size: 19px;
 }
