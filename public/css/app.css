@@ -775,7 +775,8 @@ div.panel {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%
+    border-radius: 50%;
+    margin-left: 40px;
 }
 
 
@@ -972,4 +973,13 @@ h2.profilename{
     margin-top: 5px;
     background-color: transparent;
     border: none;
+}
+
+.userprofileinformation{
+	margin-left: 40px;
+	margin-top: 50px;
+}
+.userprofileinformation h3{
+	font-family: avenirBlack;
+
 }
