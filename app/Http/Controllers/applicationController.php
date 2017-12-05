@@ -15,15 +15,13 @@ class applicationController extends Controller{
         return $this->createMessage($vacancy, $msg, 'Reply', $consultantId);
     }
     
-    public function createApplication($vacancy, $msg, $consultantId = null){
-       return $this->createMessage($vacancy, $msg, 'Application', $consultantId);
-    }
-    
-    public function createInvite($vacancy, $msg, $consultantId = null){
-        //return $this->createMessage($vacancy, $msg, 'Invite', $consultantId);
+    public function createApplication($vacancyId, $msg, $consultantId = null){
+        $user = Auth::user();
+        return $user->hasApplied($vacancyId) ? null 
+               : $this->createMessage($vacancyId, $msg, 'Application', $consultantId);
     }
 
-    private function createMessage($vacancy, $msg, $type, $consultantId = null){
+    private function createMessage($vacancyId, $msg, $type, $consultantId = null){
         $user = Auth::user();
         if($consultantId === null){
             $consultantId = $user->id;
@@ -34,14 +32,14 @@ class applicationController extends Controller{
             try{
                 $msg = $user->messages()->create([
                     'message' =>  $msg,
-                    'vacancy' => $vacancy,
+                    'vacancy' => $vacancyId,
                     'type' => $type,
                     'consultant_id' => $consultantId,
                     'author_id' => $user->id
                 ]);
                 
                 $msg->author = $user;
-                event(new messagePosted($msg, $vacancy, $consultantId));
+                event(new messagePosted($msg, $vacancyId, $consultantId));
                 
                 return $msg;
                 
@@ -57,7 +55,7 @@ class applicationController extends Controller{
         $user = Auth::user();
         $vacancy = vacancy::get($vacancyId);
         //false aka. User == admin
-        if(!false && !$user->hasApplied($vacancy)){
+        if(!false && !$user->hasApplied($vacancy->Id)){
             return view('applications/application_form', ['vacancy' => $vacancy, 'User' => $user]);
         }
         

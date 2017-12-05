@@ -40,8 +40,8 @@ class User extends Authenticatable
                 ->where('messages.type', '=', 'Application');
     }
     
-    public function hasApplied($vacancy){
+    public function hasApplied($vacancyId){
         return count($this->applications()
-                ->where('vacancy', '=', $vacancy->Id)->get()) > 0;
+                ->where('vacancy', '=', $vacancyId)->get()) > 0;
     }
 }

@@ -7,18 +7,19 @@ use App\Events\messagePosted;
 
 Route::view('/vacanciestest', 'vacancies/vacancies');
 Route::get('/vacancies/{Id}', 'vacancyController@vacancyView');
-Route::get('/vacancies/{Id}/apply', 'applicationController@getFormView');//->middleware('auth');
+Route::get('/vacancies/{Id}/apply', 'applicationController@getFormView')->middleware('auth');
 
 Route::post('/vacancies/{Id}/apply', function ($vacancyId){
     $msg = request()->get('message');
     $c = new applicationController();
 
     return $c->createApplication($vacancyId, $msg) ?
-            redirect('/vacancies/' . $vacancyId . '/chat') : redirect('ERROR');
+            redirect('/vacancies/' . $vacancyId . '/chat') : false;
 })->middleware('auth');
 
 Route::get('/vacancies/{vacancyId}/chat', function ($vacancyId){
-return view('applications/applications_log', ['vacancy' => \App\vacancy::get($vacancyId), 'consultantId' => Auth::user()->id]);
+return view('applications/applications_log', ['vacancy' => \App\vacancy::get($vacancyId), 
+    'consultantId' => Auth::user()->id]);
 })->middleware('auth');
 
 Route::get('/vacancies/{vacancyId}/chat/messages', function ($vacancyId){

@@ -13,16 +13,11 @@ class message extends Model
     
     
     public function author(){
-        return $this->belongsTo('App\User', 'author_id')
-                ->withDefault(['name' => 'Deleted User']);
+        return $this->belongsTo('App\User', 'author_id');
     }
     
     public function consultant(){
-        //return $this->belongsTo(User::class, 'consultantId');
-    }
-    
-    public function vacancy(){
-        return new vacancie(array('id' => $this['id'], 'jobTitle' => 'Job Title'));
+        return $this->belongsTo('App\User', 'consultant_id');
     }
     
     public function invitation(){

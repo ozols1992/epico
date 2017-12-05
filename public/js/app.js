@@ -48018,20 +48018,16 @@ var render = function() {
         return _c("msg", { attrs: { msg: msg } })
       }),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.messages.length === 0,
-              expression: "messages.length === 0"
-            }
-          ]
-        },
-        [_vm._v("loading...")]
-      )
+      _c("div", {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.messages.length === 0,
+            expression: "messages.length === 0"
+          }
+        ]
+      })
     ],
     2
   )
