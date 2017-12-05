@@ -13,17 +13,21 @@
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 
             </form>
-        
+            <div class="profileinformation">
             <h2>{{ Auth::user()->name }}</h2><br>
+            <h5>{{ Auth::user()->type }}</h5><br>
+            
         </div>
-            <h5>{{ Auth::user()->title }}</h5>
-            <div class="accounttop2"></div>
+         <h5>{{ Auth::user()->title }}</h5>   
+        </div>
+            
+
        
             
             <h5>{{ Auth::user()->title }}</h5>
             <h3>About me:</h3>
             <h5>{{ Auth::user()->description }}</h5>
-            <h3>I'am:</h3>
+            
             <h5>{{ Auth::user()->type }}</h5>
             <h3>Address:</h3>
             <h5>{{ Auth::user()->country }}</h5>
