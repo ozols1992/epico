@@ -768,27 +768,27 @@ div.panel {
     text-align: center;
 }
 #imageupload {
-	display: none;
+    display: none;
 }
 
 .responsivepic{
-	
-	width: 100%;
+
+    width: 100%;
     height: auto;
-	overflow: hidden;
-border-radius: 75px;	
+    overflow: hidden;
+    border-radius: 75px;	
 }
 .imagecontainer{
-	width: 150px;
-	position: relative;
-	overflow: hidden;
-	border-radius: 75px;
+    width: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 75px;
 
 }
 
 .profiletop{
-	background-color: #A7183F;
+    background-color: #A7183F;
 }
 .profileinformation{
-	color: white;
+    color: white;
 }
