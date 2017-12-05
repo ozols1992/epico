@@ -767,3 +767,209 @@ div.panel {
 .contactjob {
     text-align: center;
 }
+#imageupload {
+    display: none;
+}
+
+.responsivepic{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%
+}
+
+
+.profiletop{
+    background-color: #A7183F;
+}
+.profileinformation{
+    color: white;
+}
+
+.cancel {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.profiletop{
+    background-color: #A7183F;
+    display: flex;
+    height: 180px;
+}
+.profileinformation{
+    color: white;
+}
+.usertitle{
+    display: flex;
+    justify-content: center;
+    color: black;
+
+}
+.profiletop{
+    background-color: #A7183F;
+}
+.profileinformation{
+    color: white;
+}
+
+.cancel {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.profiletop{
+    background-color: #A7183F;
+    display: flex;
+    height: 180px;
+}
+.profileinformation{
+    color: white;
+    font-family: avenirBook;	
+
+}
+.usertitle{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: avenirBook;
+
+}
+.profilename {
+    font-family: avenirBlack;
+}
+
+.contactmainflex {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactfield {
+    display: flex;
+    width: 550px;
+    border-bottom: 3px solid #A7183F;
+    margin: 30px;
+}
+
+.informationflex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.informationinnerflex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iconcontainer{
+    display: block;
+    width: 8%;
+    height: 30px;
+}
+
+.contacticon {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.h5info {
+    display: block;
+    width: 92%;
+    padding-left: 10px;
+}
+
+.contactimage {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.contactname {
+    font-family: avenirBlack;
+}
+
+.contactbutton {
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: auto;
+    background-color: #A7183F;
+    color: white;
+    font-family: avenirBook;
+    border-color: #A7183F;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 5px 34px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 34px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 34px -7px rgba(0,0,0,0.75);
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.contactbutton:hover {
+    background-color: #890528;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.profiletop{
+    background-color: #A7183F;
+    display: flex;
+    height: 180px;
+}
+.profileinformation{
+    color: white;
+    font-family: avenirBook;	
+
+}
+.usertitle{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: avenirBook;
+
+}
+.profilename {
+    font-family: avenirBlack;
+    height: 18px;
+}
+#uploadform {
+    margin-right: 25px;
+}
+.imagecontainer{
+    margin-left: 25px;
+}
+h2.profilename{
+    margin-top: 25px;
+}
+.buttoneditprofile{
+    margin-left: auto;
+    display: block;
+    margin-right: 70px;
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+}
