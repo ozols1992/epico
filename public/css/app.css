@@ -1025,9 +1025,12 @@ h2.profilename{
 }
 .userprofileinformation h5{
 	width: 90%;
+	margin-top:20px;
+	
 }
 .userprofileinformation span{
 	width: 10%;
+	margin-top:20px;
 }
 
 .typeofwork{
@@ -1115,4 +1118,5 @@ div[class="col-md-6 col-md-offset-4"], div[class="col-md-8 col-md-offset-4"]{
 
 .profilelocation{
 	width: 90%;
+	margin-top: 25px;
 }
