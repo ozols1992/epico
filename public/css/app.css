@@ -837,6 +837,7 @@ div.panel {
     font-size: 30px;
     display: block;
     margin-bottom: 100px;
+    font-family: avenirBook;
 }
 
 .profiletop{
@@ -904,6 +905,7 @@ div.panel {
 .informationinnerflex {
     display: flex;
     flex-wrap: wrap;
+    font-family: avenirBook;
 }
 
 .iconcontainer{
@@ -1074,11 +1076,13 @@ h2.profilename{
 
 .newsdate {
     font-size: 14px;
+    font-family: avenirBook;
 }
 
 .author {
     font-size: 18px;
     color: black;
+    font-family: avenirBook;
 }
 
 .author a {
@@ -1097,6 +1101,7 @@ h2.profilename{
 
 .newscontent {
     color: black;
+    font-family: avenirBook;
 }
 .workandstatusinfo{
     display: flex;
@@ -1114,6 +1119,7 @@ form .col-md-6 {
 label{
     text-align: left!important;
     width: 100%!important;
+    font-family: avenirBook!important;
 }
 
 div[class="col-md-6 col-md-offset-4"], div[class="col-md-8 col-md-offset-4"]{
