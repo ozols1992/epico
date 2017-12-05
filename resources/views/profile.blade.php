@@ -36,13 +36,16 @@
             <div class="userprofileinformation">
             
             <span class="editiconemail">
-                    <img src="img/email.png"></span>
+                    <img src="img/user.png"></span>
             <h5>{{ Auth::user()->description }}</h5>
+
             <span class="editiconemail">
                     <img src="img/email.png"></span>
-
-            
             <h5>{{ Auth::user()->email }}</h5>
+            <span class="phonenumber">
+                    <img src="img/phone.png"></span>
+            
+            <h5>{{ Auth::user()->phone_nr }}</h5>
             <span class="adressicon">
                     <img src="img/address.png"></span>
             <div class="profilelocation">
@@ -51,10 +54,7 @@
             <p>{{ Auth::user()->address }}</p>
             <p>{{ Auth::user()->zip_code }}</p>
             </div>
-            <span class="phonenumber">
-                    <img src="img/phone.png"></span>
             
-            <h5>{{ Auth::user()->phone_nr }}</h5>
           
         </div>
             
@@ -62,4 +62,6 @@
             <h3 class="notloggedin">You need to log in. <a href="/login">Click here to login</a></h3>
         @endif
     </div>
+    <br>
+    <br>
 @endsection

@@ -1017,6 +1017,9 @@ h2.profilename{
     margin-top: 50px;
     display: flex;
 	flex-wrap: wrap;
+	font-family: avenirBook;
+
+
 }
 .userprofileinformation h3{
     font-family: avenirBlack;
@@ -1025,9 +1028,14 @@ h2.profilename{
 }
 .userprofileinformation h5{
 	width: 90%;
+	margin-top:20px;
+	padding-left: 15px;
+	font-size: 15px;
+
 }
 .userprofileinformation span{
 	width: 10%;
+	margin-top:20px;
 }
 
 .typeofwork{
@@ -1115,4 +1123,7 @@ div[class="col-md-6 col-md-offset-4"], div[class="col-md-8 col-md-offset-4"]{
 
 .profilelocation{
 	width: 90%;
+	margin-top: 25px;
+	padding-left: 15px;
+	font-size: 15px;
 }
