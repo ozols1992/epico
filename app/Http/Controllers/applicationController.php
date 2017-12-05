@@ -28,7 +28,7 @@ class applicationController extends Controller{
         }
         
         //OR User === admin
-        if($user->id == $consultantId || TRUE){
+        if($user->id == $consultantId || FALSE){
             try{
                 $msg = $user->messages()->create([
                     'message' =>  $msg,
@@ -44,9 +44,7 @@ class applicationController extends Controller{
                 return $msg;
                 
             }
-            catch (Exception $e) {
-                
-            }
+            catch (Exception $e) { }
         }
         return FALSE;
     }
