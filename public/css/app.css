@@ -1088,3 +1088,17 @@ h2.profilename{
 	font-size: 19px;
 	font-family: avenirBook;
 }
+
+form .col-md-6 {
+    width: 100%;
+}
+
+label{
+    text-align: left!important;
+    width: 100%!important;
+}
+
+div[class="col-md-6 col-md-offset-4"], div[class="col-md-8 col-md-offset-4"]{
+    margin-left: 0!important;
+    width: 100%;
+}
