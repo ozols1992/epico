@@ -67,6 +67,3 @@ Route::get('vacancies', 'epicoApiController@vacanciesApi');
 Route::get('/', 'epicoApiController@newsfeedApi');
 
 Route::get('/contacts', 'epicoApiController@contactsApi');
-
-Route::get('/email', 'EmailController@index');
-Route::get('/email', 'EmailController@contactsApi');

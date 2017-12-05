@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="accounttop1">    
-    <img class="toplogo" src="img/For_dark_&_red_background.png" alt=""/>    
+<div class="accounttop1">
+    <img class="toplogo" src="img/For_dark_&_red_background.png" alt=""/>
 </div>
 <div class="accounttop2"></div>
 
@@ -96,7 +96,7 @@
                     <div class="check"></div>
                 </div>
                 <div class="hoversection">
-                    <input id="type2" type="radio" class="form-control" name="type" value="Job_seeker">
+                    <input id="type2" type="radio" class="form-control" name="type" value="Job seeker">
                     <label for="type2">Job seeker</label>
                     <div class="check"></div>
                 </div>
@@ -175,7 +175,7 @@
                 <div class="line"></div>
                 <h3 class="or">Or register with</h3>
                 <div class="line"></div>
-            </div>            
+            </div>
             <div class="col-md-8 col-md-offset-2">
                 <a href="{{ url('login/linkedin') }}" class="linkedin2"><i class="fa fa-linkedin"></i>Register with LinkedIn<i class="balance"></i></a>
             </div>
