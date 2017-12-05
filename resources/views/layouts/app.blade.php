@@ -52,23 +52,23 @@
         <!-- Scripts -->
 
         <script type="text/javascript">
-var acc = document.getElementsByClassName("accordion");
-var i;
+            var acc = document.getElementsByClassName("accordion");
+            var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-    };
-}
-document.getElementById("imageupload").onchange = function() {
-    document.getElementById("uploadform").submit();
-};
+            for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                };
+            }
+            document.getElementById("imageupload").onchange = function () {
+                document.getElementById("uploadform").submit();
+            };
         </script>
 
     </body>

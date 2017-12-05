@@ -8,7 +8,7 @@
     padding: 5px;
 }
 
- #msglog{
+#msglog{
     margin: 5px;
 }
 
@@ -30,7 +30,7 @@
 .msgform{
     width: 100%;
 }
-    
+
 .msgtextinput{
     width: 100%;
     height: 80px;
@@ -43,4 +43,74 @@
 
 img.logo{
     height: 100%;
+}
+
+.content>.container>h3, .content>#app>.container>h3 {
+    font-family: avenirBlack;
+    text-align: center;
+    margin-top: 150px;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.content>#app>.container>a {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    font-family: avenirBook;
+}
+
+.userstuff, .msgform {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.msgform tr{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.msgform td{
+    width: 100%;
+}
+
+.msgsendbutton {
+    margin-top: 30px;
+    font-family: avenirBook;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A7183F;
+    border-color: #A7183F;
+    width: 300px;
+    font-size: 30px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    -webkit-box-shadow: 0px 5px 34px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 34px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 34px -7px rgba(0,0,0,0.75);
+    webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.msgsendbutton:hover {
+    background-color: #890528;
+    webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+textarea {
+    font-family: avenirBook;
 }

@@ -1016,8 +1016,8 @@ h2.profilename{
     margin-left: 40px;
     margin-top: 50px;
     display: flex;
-	flex-wrap: wrap;
-	font-family: avenirBook;
+    flex-wrap: wrap;
+    font-family: avenirBook;
 
 
 }
@@ -1027,15 +1027,15 @@ h2.profilename{
 
 }
 .userprofileinformation h5{
-	width: 90%;
-	margin-top:20px;
-	padding-left: 15px;
-	font-size: 15px;
+    width: 90%;
+    margin-top:20px;
+    padding-left: 15px;
+    font-size: 15px;
 
 }
 .userprofileinformation span{
-	width: 10%;
-	margin-top:20px;
+    width: 10%;
+    margin-top:20px;
 }
 
 .typeofwork{
@@ -1099,12 +1099,12 @@ h2.profilename{
     color: black;
 }
 .workandstatusinfo{
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 .currentstatusprofile{
-	font-size: 19px;
-	font-family: avenirBook;
+    font-size: 19px;
+    font-family: avenirBook;
 }
 
 form .col-md-6 {
@@ -1122,8 +1122,37 @@ div[class="col-md-6 col-md-offset-4"], div[class="col-md-8 col-md-offset-4"]{
 }
 
 .profilelocation{
-	width: 90%;
-	margin-top: 25px;
-	padding-left: 15px;
-	font-size: 15px;
+    width: 90%;
+    margin-top: 25px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.jobbutton {
+    color: white;
+    background-color: #A7183F;
+    display: inline-block;
+    width: 25%;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 0px 5px 34px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 34px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 34px -7px rgba(0,0,0,0.75);
+    webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.jobbutton:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #890528;
+    webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
