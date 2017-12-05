@@ -30,17 +30,24 @@
             axios.get(location.href + '/messages').then(result => {
                this.messages = result.data;
             }).catch(function(error){alert(error);});
+
             
-            //Pusher.logToConsole = true;
-
-            //var pusher = new Pusher('e6e536103d1031ec4f99', {
-            //  encrypted: true
-            //});
-
-            //var channel = pusher.subscribe('chat.{{ $vacancy->Id . "." . $consultantId }}');
-            //channel.bind('messagePosted', function(data) {
-            //  alert(data.message);
-            //});
+            Echo.private('chat.{{ $vacancy->Id . "." . $consultantId }}')
+            .listen('.messagePosted', (e) => {
+                alert('Hello');
+            });
+            
+            
+//            Pusher.logToConsole = true;
+//
+//            var pusher = new Pusher('e6e536103d1031ec4f99', {
+//              encrypted: true
+//            );
+//
+//            var channel = pusher.subscribe('chat.{{ $vacancy->Id . "." . $consultantId }}');
+//            channel.bind('messagePosted', function(data) {
+//              alert(data.message);
+//            });
             
         }
     }); 

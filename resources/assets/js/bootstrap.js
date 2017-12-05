@@ -21,8 +21,6 @@ try {
 
 window.axios = require('axios');
 
-window.Vue = require('vue');
-
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**
@@ -45,12 +43,14 @@ if (token) {
  * allows your team to easily build robust real-time web applications.
  */
 
+window.Vue = require('vue');
+
  import Echo from 'laravel-echo'
 
  window.Pusher = require('pusher-js');
 
 window.Echo = new Echo({
-     broadcaster: 'pusher',
+     broadcaster: 'pusher'
      key: 'e6e536103d1031ec4f99',
      cluster: 'mt1',
      encrypted: false
