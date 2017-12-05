@@ -852,3 +852,93 @@ div.panel {
 .profilename {
     font-family: avenirBlack;
 }
+
+.contactmainflex {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactfield {
+    display: flex;
+    width: 550px;
+    border-bottom: 3px solid #A7183F;
+    margin: 30px;
+}
+
+.informationflex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.informationinnerflex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iconcontainer{
+    display: block;
+    width: 8%;
+    height: 30px;
+}
+
+.contacticon {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.h5info {
+    display: block;
+    width: 92%;
+    padding-left: 10px;
+}
+
+.contactimage {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.contactname {
+    font-family: avenirBlack;
+}
+
+.contactbutton {
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: auto;
+    background-color: #A7183F;
+    color: white;
+    font-family: avenirBook;
+    border-color: #A7183F;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 5px 34px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 34px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 34px -7px rgba(0,0,0,0.75);
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.contactbutton:hover {
+    background-color: #890528;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
