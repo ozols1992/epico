@@ -30,12 +30,12 @@
             
 
        
-            
+            <div class="userprofileinformation">
             
             <h3>About me:</h3>
             <h5>{{ Auth::user()->description }}</h5>
-            
-            <h5>{{ Auth::user()->type }}</h5>
+            <h3>Email</h3>
+            <h5>{{ Auth::user()->email }}</h5>
             <h3>Address:</h3>
             <h5>{{ Auth::user()->country }}</h5>
             <h5>{{ Auth::user()->city }}</h5>
@@ -45,6 +45,7 @@
             <h5>{{ Auth::user()->phone_nr }}</h5>
             <h3>Current status</h3>
             <h5>{{ Auth::user()->available_or_not }}</h5>
+        </div>
             
         @else
             <h3 class="notloggedin">You need to log in. <a href="/login">Click here to login</a></h3>

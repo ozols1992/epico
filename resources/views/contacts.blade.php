@@ -29,7 +29,7 @@
                         </div>
                         <h5 class="h5info">{!! $contacts->attributes()->location !!}</h5>
                     </div>
-                    <a class="contactbutton">Contact</a>
+                    <a href='{!! url('/email'); !!}' class="contactbutton">Contact</a>
                 </div>
             </div>
         </div>
