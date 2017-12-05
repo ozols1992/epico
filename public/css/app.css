@@ -843,12 +843,12 @@ div.panel {
 
 }
 .usertitle{
-	display: flex;
-	justify-content: center;
-	color: white;
-	font-family: avenirBook;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: avenirBook;
 
 }
 .profilename {
-	font-family: avenirBlack;
+    font-family: avenirBlack;
 }
