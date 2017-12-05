@@ -37,7 +37,7 @@
                 <a href='{!! url('/'); !!}'>News</a>
                 <a href='{!! url('/vacancies'); !!}'>Job vacancies</a>
                 <a href='{!! url('/profile'); !!}'>Profile</a>
-                <a href='{!! url('/contacts'); !!}'>contacts</a>
+                <a href='{!! url('/contacts'); !!}'>Contacts</a>
                 <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     {{ csrf_field() }}
