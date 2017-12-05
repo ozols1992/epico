@@ -12,7 +12,7 @@
                 <p class="author">Author: <a href="mailto:{!! $news->attributes()->contactEmail !!}">{!! $news->attributes()->contactEmail !!}</a></p>
                 <p class="newsdate">Published at: {!! $news->attributes()->publishDate !!}</p>
             </div>
-            <div class="newscontent">{!! $news->div->div->div->div->asXML() !!}</div><br>
+            <div class="newscontent">{!! $news->div->div->div->div->asXML() !!}</div>
         </div>
 
         @endforeach
