@@ -1023,6 +1023,7 @@ h2.profilename{
 .typeofwork{
     font-family: avenirBook;
     font-size: 19px;
+    margin-right: 50px;
 }
 
 .newscontent .col-md-12 {
@@ -1078,4 +1079,12 @@ h2.profilename{
 
 .newscontent {
     color: black;
+}
+.workandstatusinfo{
+	display: flex;
+	justify-content: space-between;
+}
+.currentstatusprofile{
+	font-size: 19px;
+	font-family: avenirBook;
 }

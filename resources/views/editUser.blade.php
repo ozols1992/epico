@@ -12,7 +12,7 @@
         {{ csrf_field() }}
 
         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-            <label for="name" class="col-md-4 control-label">Name</label>
+            <label for="name" class="col-md-4 control-label">Full Name</label>
 
             <div class="col-md-6">
                 <input id="name" type="text" class="form-control" name="name" value="{{ $user->name or old('name') }}"></input>
@@ -28,7 +28,7 @@
         </div>
 
         <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
-            <label for="title" class="col-md-4 control-label">Job title</label>
+            <label for="title" class="col-md-4 control-label">Job title(s)</label>
 
             <div class="col-md-6">
                 <input id="title" type="text" class="form-control" name="title" value="{{ $user->title or old('title') }}"></input>
