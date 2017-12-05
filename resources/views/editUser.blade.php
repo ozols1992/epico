@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h1>Update your profile</h1>
-
+<div class="accounttop1">    
+    <img class="toplogo" src="img/For_dark_&_red_background.png" alt=""/>    
+</div>
+<div class="accounttop2"></div>
+<h1 class="registertitle">UPDATE PROFILE<span class="dot">.</span></h1>
+<div class="panel-body">
           <form class="form-horizontal" method="POST" action="{!! url('/editUser'); !!}">
               {{ csrf_field() }}
 
@@ -93,7 +94,5 @@
               </div>
 
           </form>
-        </div>
-    </div>
 </div>
 @endsection
