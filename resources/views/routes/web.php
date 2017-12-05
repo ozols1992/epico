@@ -18,7 +18,7 @@ Route::post('/vacancies/{Id}/apply', function ($vacancyId){
 })->middleware('auth');
 
 Route::get('/vacancies/{vacancyId}/chat', function ($vacancyId){
-return view('applications/applications_log', ['vacancy' => \App\vacancy::get($vacancyId),
+return view('applications/applications_log', ['vacancy' => \App\vacancy::get($vacancyId), 
     'consultantId' => Auth::user()->id]);
 })->middleware('auth');
 
@@ -67,6 +67,3 @@ Route::get('vacancies', 'epicoApiController@vacanciesApi');
 Route::get('/', 'epicoApiController@newsfeedApi');
 
 Route::get('/contacts', 'epicoApiController@contactsApi');
-
-Route::get('/email', 'EmailController@index');
-Route::get('/email', 'EmailController@contactsApi');
