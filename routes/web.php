@@ -5,6 +5,30 @@
 use App\Http\Controllers\applicationController;
 use App\Events\messagePosted;
 
+
+////////// - Admin
+
+Route::get('/conversation/{vacancyId}/{consultantId}', function ($vacancyId, $consultantId){
+return view('applications/applications_log', ['vacancy' => \App\vacancy::get($vacancyId),
+    'consultantId' => $consultantId]);
+})->middleware('auth');
+
+
+Route::get('/conversation/{vacancyId}/{consultantId}/messages', function ($vacancyId, $consultantId){
+    $c = new applicationController();
+    return $c->getApplicationAndReplies($vacancyId, $consultantId);
+})->middleware('auth');
+
+Route::post('/conversation/{vacancyId}/{consultantId}/messages', function ($vacancyId, $consultantId){
+    $msg = request()->get('msg');
+    $c = new applicationController();
+
+    return $c->createReply($vacancyId, $msg, $consultantId);
+})->middleware('auth');
+
+////////
+
+
 Route::view('/vacanciestest', 'vacancies/vacancies');
 Route::get('/vacancies/{Id}', 'vacancyController@vacancyView');
 Route::get('/vacancies/{Id}/apply', 'applicationController@getFormView')->middleware('auth');

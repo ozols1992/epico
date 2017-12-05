@@ -28,7 +28,7 @@ class message extends Model
     public static function getmessages($consultantId, $vacancyId, $columns = ['*'])
     {
         $user = Auth::user();
-        if(false || $user->id == $consultantId){
+        if(true || $user->id == $consultantId){
             return self::with('author')
                 ->where(array('consultant_id' => $consultantId, 'vacancy' => $vacancyId))
                 ->get(is_array($columns) ? $columns : func_get_args());

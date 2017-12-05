@@ -28,7 +28,7 @@ class applicationController extends Controller{
         }
         
         //OR User === admin
-        if($user->id == $consultantId || FALSE){
+        if($user->id == $consultantId || true){
             try{
                 $msg = $user->messages()->create([
                     'message' =>  $msg,
@@ -67,7 +67,7 @@ class applicationController extends Controller{
         $consultantId = $consultantId === null ? $user->id : $consultantId;
         
         //User === admin
-        if($user->id == $consultantId || false){
+        if($user->id == $consultantId || true){
             return message::getmessages($consultantId, $vacancyId);
         } 
     }
