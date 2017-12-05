@@ -18,8 +18,11 @@
             </form>
             <div class="profileinformation">
             <h2 class="profilename">{{ Auth::user()->name }}</h2><br>
-            <h5 class="typeofwork">{{ Auth::user()->type }}</h5><br>
-            
+            <div class="workandstatusinfo">
+            <h5 class="typeofwork">{{ Auth::user()->type }}</h5>
+            <h5 class="currentstatusprofile">{{ Auth::user()->available_or_not }}
+            </h5><br>
+            </div>
         </div>
            
         </div>
@@ -32,7 +35,7 @@
        
             <div class="userprofileinformation">
             
-            <h3>email</h3>
+            <h3>About me</h3>
             <h5>{{ Auth::user()->description }}</h5>
             <span class="editiconemail">
                     <img src="img/email.png"></span>
@@ -49,8 +52,7 @@
                     <img src="img/phone.png"></span>
             <h3>Phone nr.</h3>
             <h5>{{ Auth::user()->phone_nr }}</h5>
-            <h3>Current status</h3>
-            <h5>{{ Auth::user()->available_or_not }}</h5>
+            
         </div>
             
         @else
