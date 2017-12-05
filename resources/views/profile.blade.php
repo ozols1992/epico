@@ -12,7 +12,7 @@
         @if (Auth::check())
             <div class="profiletop">
             <form id="uploadform" enctype="multipart/form-data" action="/profile" method="post">
-                <div class="imagecontainer"><label for="imageupload"><img class="responsivepic" src="/img/avatars/{{ Auth::user()->avatar }}"></label></div>
+                <div class="profileimagecontainer"><label for="imageupload"><img class="responsivepic" src="/img/avatars/{{ Auth::user()->avatar }}"></label></div>
                 <input id="imageupload" type="file" name="avatar">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
             </form>

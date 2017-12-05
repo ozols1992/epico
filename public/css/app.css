@@ -772,19 +772,12 @@ div.panel {
 }
 
 .responsivepic{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 75px;	
-}
-.profileimagecontainer{
     width: 150px;
-    height:150px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 75px;
-
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%
 }
+
 
 .profiletop{
     background-color: #A7183F;
