@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Auth;
 
 
 class message extends Model
@@ -26,9 +27,14 @@ class message extends Model
 
     public static function getmessages($consultantId, $vacancyId, $columns = ['*'])
     {
-        //consultant === User OR User === Admin
-        return self::with('author')
+        $user = Auth::user();
+        if(false || $user->id == $consultantId){
+            return self::with('author')
                 ->where(array('consultant_id' => $consultantId, 'vacancy' => $vacancyId))
                 ->get(is_array($columns) ? $columns : func_get_args());
+        }
+        else {
+            return null;
+        }
     }
 }
