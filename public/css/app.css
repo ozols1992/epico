@@ -772,14 +772,14 @@ div.panel {
 }
 
 .responsivepic{
-
     width: 100%;
     height: auto;
     overflow: hidden;
     border-radius: 75px;	
 }
-.imagecontainer{
+.profileimagecontainer{
     width: 150px;
+    height:150px;
     position: relative;
     overflow: hidden;
     border-radius: 75px;
@@ -964,19 +964,19 @@ div.panel {
     height: 18px;
 }
 #uploadform {
-	margin-right: 25px;
+    margin-right: 25px;
 }
 .imagecontainer{
-	margin-left: 25px;
+    margin-left: 25px;
 }
 h2.profilename{
-	margin-top: 25px;
+    margin-top: 25px;
 }
- .buttoneditprofile{
-	margin-left: auto;
-	display: block;
-	margin-right: 70px;
-	margin-top: 5px;
-	background-color: transparent;
-	border: none;
+.buttoneditprofile{
+    margin-left: auto;
+    display: block;
+    margin-right: 70px;
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
 }

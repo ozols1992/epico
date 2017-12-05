@@ -15,8 +15,6 @@
                 <div class="imagecontainer"><label for="imageupload"><img class="responsivepic" src="/img/avatars/{{ Auth::user()->avatar }}"></label></div>
                 <input id="imageupload" type="file" name="avatar">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                
-                
             </form>
             <div class="profileinformation">
             <h2 class="profilename">{{ Auth::user()->name }}</h2><br>
