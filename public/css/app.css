@@ -189,7 +189,7 @@ a img {
 
 .accounttop2 {
     z-index: -1;
-    margin-top: -70px;
+    margin-top: -80px;
     top:-5%;
     left:-5%;
     transform:rotate(-2deg);
@@ -825,6 +825,10 @@ div.panel {
 
 .profiletop{
     background-color: #A7183F;
+    width: 110%;
+    position: relative;
+    padding-top: 40px;  
+    display: flex;
 }
 .profileinformation{
     color: white;
@@ -840,18 +844,12 @@ div.panel {
     font-family: avenirBook;
 }
 
-.profiletop{
-    background-color: #A7183F;
-    display: flex;
-    height: 180px;
-}
+
 .profileinformation{
     color: white;
 }
 
-.profiletop{
-    background-color: #A7183F;
-}
+
 .profileinformation{
     color: white;
 }
@@ -865,11 +863,6 @@ div.panel {
     margin-bottom: 100px;
 }
 
-.profiletop{
-    background-color: #A7183F;
-    display: flex;
-    height: 180px;
-}
 .profileinformation{
     color: white;
     font-family: avenirBook;	
@@ -971,23 +964,22 @@ div.panel {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-.profiletop{
-    background-color: #A7183F;
-    display: flex;
-    height: 180px;
-}
+
+
 .profileinformation{
     color: white;
     font-family: avenirBook;	
 
 }
 .usertitle{
-    display: flex;
-    justify-content: center;
+    margin: 0;
     color: white;
     font-family: avenirBook;
     font-size: 15px;
+    width: 100%;
+    text-align: center;
 }
+
 
 .profilename {
     font-family: avenirBlack;
@@ -1017,6 +1009,7 @@ h2.profilename{
 
 .userprofileinformation{
     margin-left: 40px;
+    margin-right: 40px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -1031,14 +1024,17 @@ h2.profilename{
 }
 .userprofileinformation h5{
     width: 90%;
-    margin-top:20px;
+    margin-top: 35px;
     padding-left: 15px;
     font-size: 15px;
 
 }
 .userprofileinformation span{
     width: 10%;
-    margin-top:20px;
+}
+
+.editiconemail, .phonenumber, .adressicon {
+    margin-top: 25px;
 }
 
 .typeofwork{
@@ -1162,4 +1158,55 @@ div[class="col-md-6 col-md-offset-4"], div[class="col-md-8 col-md-offset-4"]{
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+}
+
+.startbottom {
+    margin-bottom: 120px;
+}
+
+.uploadinfo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    overflow: hidden;
+}
+.uploadinfo p {
+    display: block;
+    color: white;
+    font-family: avenirBook;
+    margin-top: 120px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+} 
+
+.profileimagecontainer {
+    position: relative;
+}
+
+.profileimagecontainer>label {
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.profiletop2 {
+    width: 110%;
+    position: relative;
+    background-color: #A7183F;
+    padding-top: 40px;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #595959;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
