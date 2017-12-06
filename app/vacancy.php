@@ -12,7 +12,7 @@ class vacancy extends Model
         'AdvertisingType', 'SearchEmail', 'Footer'
     ];
     
-    protected static $url = "http://epico.dk/umbraco/surface/home/AllAdvertising";
+    protected static $url = "http://localhost:1234/epico/public/files/AllAdvertising.json";
     
     private static function getAll_Json(){
         return json_decode(file_get_contents(self::$url), true);
