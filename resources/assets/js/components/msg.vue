@@ -11,7 +11,6 @@
                         <td>
                             Name: {{ msg.author.name }}<br/>
                             E-mail: {{ msg.author.email }}<br/>
-                            <a href="#">See Profile</a><br/>
                         </td>
                     </tr>
                     <tr>

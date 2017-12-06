@@ -1,0 +1,86 @@
+ <root>
+    <LocationList>
+            <Location id="EPICO-IT ApS" address="Borupvang 2C, 2. sal" zipcode="2750" city="Ballerup" country="CVR: 32466249" phone="+45 20 87 17 21" fax="" contactlist="" />
+            <Location id="Aarhus" address="Skanderborgvej 232, 1. th" zipcode="8260" city="Viby J" country="Danmark" phone="+45 53 74 72 36" fax="" contactlist="1340,1654,1357,1366,1674,1773" />
+            <Location id="Bogholderiet" address="Borupvang 2C, 2. sal" zipcode="2750" city="Ballerup" country="Danmark" phone="+45 53 74 72 09" fax="invoice@epico.dk" contactlist="" />
+            <Location id="London" address="WeWork" zipcode="EC2A 2EX" city="London" country="United Kingdom" phone="+44 7786 9393 91" fax="" contactlist="1330,1347" />
+            <Location id="Stockholm" address="Olof Palmes Gata 29, 5 tr " zipcode="111 22" city="Stockholm" country="Sverige" phone="+46 705 60 09 85" fax="" contactlist="1067,1323,1329,1331,1342,1350,1351,1354,1762,1370" />
+            <Location id="G&#246;teborg" address="Kungsportsavenyen 3" zipcode="411 36 " city="G&#246;teborg " country="Sverige" phone="+46 728 57 25 32" fax="" contactlist="1069,1326,1652,1358" />
+            <Location id="WARSZAWA" address="CHŁODNA, nr. 52, lok. " zipcode="00-872" city="Wroclaw" country="Polen" phone="" fax="" contactlist="" />
+    </LocationList>
+    <ContactList>
+            <Contact id="1150" name="Allan Andersen" phone="+45 60 38 16 64 " email="and@epico.dk" department="Resource Manager" location="Ballerup" image="http://epico.dk/media/1083/and-268x189.jpg" />
+            <Contact id="1698" name="Anders B&#248;ge" phone="+45 2571 8789" email="abo@epico.dk" department="Sales Manager" location="Ballerup" image="http://epico.dk/media/1287/and-268x189.jpeg" />
+            <Contact id="1069" name="Andreas Lanner" phone="+46 728 57 25 32" email="ala@epico.se" department="Region Manager" location="G&#246;teborg" image="http://epico.dk/media/1286/ala-268x189.jpeg" />
+            <Contact id="1067" name="Andreas	Sundin " phone="+46 707907943" email="andreas.sundin@miraclesweden.com" department="Oracle Consultant" location="Stockholm" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1153" name="Anya Vangsgaard" phone="+45 53 74 71 80" email="ava@epicosearch.dk" department="Director" location="Ballerup" image="http://epico.dk/media/1084/ava2-268x189.jpg" />
+            <Contact id="1323" name="Bj&#246;rn Hedlin" phone="+46 728572534" email="bjorn.hedlin@miraclesweden.com" department="Oracle consultant" location="Stockholm" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1325" name="Casper Brandenborg" phone="+45 24 21 96 70" email="cbr@epico.dk" department="Principal Consultant" location="Ballerup" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1326" name="Charles Horndahl" phone="+46 703100300" email="cho@epico.se" department="Sales Manager " location="G&#246;teborg" image="http://epico.dk/media/1288/cho-268x189.jpeg" />
+            <Contact id="1152" name="Charlotte Skjellerup" phone="+45 24 34 40 08" email="cbs@epico.dk" department="Resource Manager" location="Ballerup" image="http://epico.dk/media/1220/cbs-268x189.jpeg" />
+            <Contact id="1653" name="Charlotte Thomassen" phone="+45 53 74 71 48" email="cht@epicosearch.dk" department="Senior Business Manager" location="Ballerup" image="http://epico.dk/media/1290/cht-268x189.jpeg" />
+            <Contact id="1327" name="Christian Van Roon Thomsen" phone="+45 22 25 99 02" email="cth@epico.dk" department="Nordic Sales Manager &amp; CEO Sweden" location="Ballerup" image="http://epico.dk/media/1088/cth-268x189.jpeg" />
+            <Contact id="1329" name="Daniel Ekberg" phone="+46 705600985" email="daniel.ekberg@miraclesweden.com" department="Oracle Consultant" location="Stockholm" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1699" name="Elisabeth Carnbring" phone="+45 5374 7152" email="eca@epico.dk" department="Resource Manager" location="" image="http://epico.dk/media/1291/eca-268x189.jpeg" />
+            <Contact id="1660" name="Elisabeth Sangill" phone="+45 31 53 20 14" email="esa@epico.dk" department="Sales Manager" location="Ballerup" image="http://epico.dk/media/1257/esa-268x189.jpeg" />
+            <Contact id="1544" name="Erik Pedersen" phone="+45 24 94 29 19" email="epe@epico.dk" department="Director - Infrastructure &amp; Cloud Solutions" location="Ballerup" image="http://epico.dk/media/1198/epe-268x189.jpeg" />
+            <Contact id="1330" name="Erika Emilia Bernstedt " phone="+44 7786 9393 91" email="eeb@miracle-buddyshop.dk" department="Managing Director" location="London" image="http://epico.dk/media/1262/eeb-268x189.jpeg" />
+            <Contact id="1673" name="Ernst Andreas Kier" phone="+45 51 72 95 95" email="eki@epico.dk" department="Sales Manager" location="Ballerup" image="http://epico.dk/media/1293/eki-268x189.jpeg" />
+            <Contact id="1766" name="Flemming S&#248;borg Hansen" phone="+45 53 74 71 64" email="fsh@epico.dk" department="Senior Consultant" location="" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1784" name="Frederik L&#252;neborg Holm Jeppesen" phone="+45 20 20 84 19" email="fje@epico.dk" department="Studentermedhj&#230;lper" location="Ballerup" image="http://epico.dk/media/1358/fje-268x189.jpeg" />
+            <Contact id="1331" name="Frederik	Carlsson" phone="+46 728573346" email="fredrik.carlsson@miraclesweden.com" department="Oracle Consultant" location="Stockholm" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1548" name="Gilles Hoxer" phone="+45 53 74 71 72" email="gho@epico.dk" department="Resource Manager" location="Ballerup" image="http://epico.dk/media/1213/gho-268x189.jpeg" />
+            <Contact id="1332" name="Gunnar Jensen" phone="+45 51 27 35 27" email="gje@epico.dk" department="Sales Manager" location="Ballerup" image="http://epico.dk/media/1089/gje-268x189.jpeg" />
+            <Contact id="1333" name="Heidi Kelman Christensen" phone="+45 53 74 71 82" email="hkc@epico.dk" department="Resource Manager - Team Lead" location="Ballerup" image="http://epico.dk/media/1211/hkc-268x189.jpeg" />
+            <Contact id="1334" name="Helle Gundersen" phone="+45 53 74 71 51" email="hgu@epico.dk" department="Resource Manager" location="Ballerup" image="http://epico.dk/media/1212/hgu-268x189.jpeg" />
+            <Contact id="1767" name="Henning Lunn Schandorph" phone="+45 53 74 72 35" email="hls@epico.dk" department="Consulting Manager" location="" image="http://epico.dk/media/1359/hls-268x189.jpeg" />
+            <Contact id="1335" name="Henriette Bundgaard Kristensen" phone="+45 53 74 72 09" email="hbk@epico.dk" department="Financial Controller" location="Ballerup" image="http://epico.dk/media/1090/hbk-268x189.jpeg" />
+            <Contact id="1336" name="Henrik Lehrmann Mortensen" phone="+45 53 74 71 57" email="hmo@epico.dk" department="Bid Manager" location="Ballerup" image="http://epico.dk/media/1091/hmo-268x189.jpeg" />
+            <Contact id="1765" name="Ib Christiansen" phone="+45 29 80 22 74" email="ibc@epico.dk" department="Sales Manager" location="Ballerup" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1338" name="Janus Porsborg" phone="+45 23 65 93 49" email="jmp@epico.dk" department="Principal Consultant " location="Ballerup" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1339" name="Jens Morten Hansen" phone="+45 20 87 17 21" email="jmh@epico.dk" department="CEO" location="Ballerup" image="http://epico.dk/media/1093/jmh-268x189.jpeg" />
+            <Contact id="1596" name="Jens Oscar Kristoffersen" phone="+45 29 90 62 81" email="jok@epico.dk" department="Sales Manager - Junior Consultants" location="Ballerup" image="http://epico.dk/media/1238/jok-268x189.jpeg" />
+            <Contact id="1340" name="Jesper Ladehoff" phone="+45 61 35 98 52" email="jla@epicosearch.dk" department="Regional Manager - West" location="Aarhus" image="http://epico.dk/media/1092/jla-268x189.jpeg" />
+            <Contact id="1654" name="Jurgita Petkute" phone=" +45 53 74 72 47" email="jup@epico.dk" department="Resource Manager" location="Aarhus" image="http://epico.dk/media/1289/jup-268x189.jpeg" />
+            <Contact id="1342" name="J&#246;rgen Svensson 	" phone="+46 728573345" email="jorgen.svensson@miraclesweden.com" department="Oracle Consultant" location="Stockholm" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1344" name="Karsten Davidsen" phone="+45 53 74 72 46" email="kda@epico.dk" department="Sales Manager" location="Ballerup" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1343" name="Karsten Find" phone="+45 20 23 70 99" email="kfi@epico.dk" department="Sales Manager" location="Ballerup" image="http://epico.dk/media/1208/kfi-268x189.jpeg" />
+            <Contact id="1763" name="Kasper Nordquist Hansen " phone="+45 5374 7173" email="kha@epico.dk" department="Principal Consultant " location="Ballerup" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1775" name="Kenneth Bojsen" phone="+45 4090 7675" email="kbo@epico.dk" department="Consultant Manager - West" location="" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1151" name="Kenneth Valeur Andersen " phone="+45 53 74 71 84" email="kva@epico.dk" department="Consulting Director - Data, Cloud &amp; Analytics" location="Ballerup" image="http://epico.dk/media/1196/kva-268x189.jpeg" />
+            <Contact id="1346" name="Lasse Hagelquist" phone="+45 53 74 71 85" email="lha@epico.dk" department="Sales Manager " location="Ballerup" image="http://epico.dk/media/1071/lha-268x189.jpeg" />
+            <Contact id="1347" name="Leanne Dalby" phone="+44 7827 8120 02" email="lda@miracle-buddyshop.dk" department="Resource Manager" location="London" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1349" name="Lotte Weinell" phone="+45 25 29 79 01" email="lwe@epico.dk" department="Head of Administration" location="Ballerup" image="http://epico.dk/media/1206/lwe-268x189.jpeg" />
+            <Contact id="1666" name="Luise Crone Dons" phone="+45 60 40 95 09" email="lcd@epico.dk" department="Contract Manager" location="Ballerup" image="http://epico.dk/media/1268/lcd-268x189.jpeg" />
+            <Contact id="1350" name="Magnus	Berglund" phone="+46 70 5600985" email="magnus.berglund@miraclesweden.com" department="Sales Manager Oracle" location="Stockholm" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1351" name="Magnus	Wennerberg" phone="+46 72 857 25 33" email="magnus.wennerberg@miraclesweden.com" department="Oracle Consultant" location="Stockholm" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1652" name="Marta Sieczko" phone="+46 728 57 25 40" email="mas@epico.se" department="Search Manager" location="G&#246;teborg" image="http://epico.dk/media/1253/mas-268x189.jpeg" />
+            <Contact id="1353" name="Martin B&#230;kgaard" phone="+45 53 74 71 74" email="mab@epico.dk" department="IT Ressource" location="Ballerup" image="http://epico.dk/media/1246/mab-268x189.jpeg" />
+            <Contact id="1768" name="Martin Withus" phone="+45 22 79 03 05" email="mwi@epico.dk" department="Delivery Manager" location="" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1354" name="Mathias	Magnusson" phone="+46 72 857 25 30" email="mathias.magnusson@miraclesweden.com" department="Oracle Consultant - Team Lead" location="Stockholm" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1547" name="Mattias T&#248;ndevold-Linnet" phone="+45 50 92 32 72" email="mtl@epico.dk" department="Sales Manager - East" location="Ballerup" image="http://epico.dk/media/1205/mtl-268x189.jpeg" />
+            <Contact id="1356" name="Mette Gross" phone="+45 53 74 71 81" email="mgr@epico.dk" department="Sales Manager - Team Lead " location="Ballerup" image="http://epico.dk/media/1076/mgr-268x189.jpeg" />
+            <Contact id="1510" name="Mette L&#230;ss&#248;e-Nielsen" phone="+45 51 27 72 03 " email="mln@epico.dk" department="Marketing &amp; Communication Coordinator" location="Ballerup" image="http://epico.dk/media/1188/mln-268x189-kopi.jpg" />
+            <Contact id="1776" name="Michael Speiser" phone="+45 3146 2207" email="msp@epico.dk" department="Project Manager / Partner" location="Ballerup" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1357" name="Michelle Mark" phone="+45 53 74 72 36" email="mma@epico.dk" department="Head of Epico - West" location="Aarhus" image="http://epico.dk/media/1077/mma-268x189.jpeg" />
+            <Contact id="1358" name="Mikael Knexson Nevander" phone="+46 728 57 25 40 " email="mkn@epico.se" department="Consultant Manager" location="G&#246;teborg" image="http://epico.dk/media/1251/mkn-268x189-2.jpeg" />
+            <Contact id="1762" name="Moji Heydari" phone="+46 5374 7247" email="mhe@epico.se" department="Sales Manager" location="Stockholm" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1795" name="Natanya Sukkot" phone="+45 28 88 78 84" email="nsu@epico.dk" department="Legal Counsel" location="Ballerup" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1785" name="Nikoline Vejby" phone="&#160;+45 24 85 44 11&#160;" email="nve@epico.dk" department="Studentermedhj&#230;lper" location="Ballerup" image="http://epico.dk/media/1360/nve-268x189.jpeg" />
+            <Contact id="1359" name="Ole S&#248;by" phone="+45 53 74 71 79" email="oso@epico.dk" department="Senior Sales Manager" location="Ballerup" image="http://epico.dk/media/1204/oso-268x189.jpeg" />
+            <Contact id="1360" name="Olivia Smith" phone="+45 25 61 06 81" email="osv@epicosearch.dk" department="Researcher &amp; HR Coordinator" location="Ballerup" image="http://epico.dk/media/1203/osv-268x189.jpeg" />
+            <Contact id="1361" name="Pauline Christiansen" phone="+45 53 74 71 53" email="pac@epicosearch.dk" department="Senior Business Manager" location="Ballerup" image="http://epico.dk/media/1078/pac-268x189.jpeg" />
+            <Contact id="1707" name="Pernille Weitemeyer Larsen" phone="+45 22 56 08 60" email="pla@epicosearch.dk" department="HR Coordinator" location="" image="http://epico.dk/media/1292/pla-268x189.jpeg" />
+            <Contact id="1363" name="Peter Kierkegaard" phone="+45 29 49 98 34" email="pki@epico.dk" department="Senior Sales Manager" location="Ballerup" image="http://epico.dk/media/1072/pki-268x189.jpeg" />
+            <Contact id="1364" name="Peter Solberg Dirksen" phone="+45 41 79 10 71" email="pdi@epico.dk" department="Sales &amp; Delivery Manager" location="Ballerup" image="http://epico.dk/media/1241/pdi-268x189.jpeg" />
+            <Contact id="1549" name="Pia Norman Andresen" phone="+45 53 74 72 17" email="pna@epico.dk" department="Accounting Assistant" location="Ballerup" image="http://epico.dk/media/1201/pna-268x189.jpeg" />
+            <Contact id="1366" name="Susanne S&#248;nderskov" phone="+45 53 74 72 34 " email="sso@epico.dk" department="Regional Manager - West" location="Aarhus" image="http://epico.dk/media/1239/sso-268x189.jpeg" />
+            <Contact id="1367" name="S&#248;ren Walsted" phone="+45 29 88 08 92" email="swa@epico.dk" department="Marketing Director" location="Ballerup" image="http://epico.dk/media/1081/swa-268x189.jpeg" />
+            <Contact id="1674" name="Thomas Gulddahl Pedersen" phone="+45 60 65 65 28" email="tgp@epico.dk" department="Sales Manager - West" location="Aarhus" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1551" name="Tom Vejby" phone="+45 53 74 72 40" email="tve@epico.dk" department="CFO" location="Ballerup" image="http://epico.dk/media/1199/tve-268x189.jpeg" />
+            <Contact id="1369" name="Trine Holm Rasmussen" phone="+45 53 74 72 85" email="thr@epicosearch.dk" department="Senior Business Manager" location="Ballerup" image="http://epico.dk/media/1245/thr-268x189.jpeg" />
+            <Contact id="1370" name="Ulf Hellstr&#246;m" phone="+46 728572531" email="ulf.hellstrom@miraclesweden.com" department="Oracle Consultant" location="Stockholm" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+            <Contact id="1773" name="Vibeke Winther Larsen" phone="+45 2060 4819" email="val@epico.dk" department="Consultant Manager - West" location="Aarhus" image="http://epico.dk/media/1070/billedepaavej.jpg" />
+    </ContactList>
+</root>
+
