@@ -21,9 +21,8 @@
         methods: {
             addmsg(msg){
 
-               axios.post(location.href + '/messages', {'msg': msg}).then(response => {
-                    this.messages.push(response.data);
-                }).catch(function(error){ alert(error); });
+               axios.post(location.href + '/messages', {'msg': msg})
+                       .catch(function(error){ alert(error); });
             }
         },
         created(){
