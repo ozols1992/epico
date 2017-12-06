@@ -12,14 +12,14 @@
         {{ csrf_field() }}
 
         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-            <label for="name" class="col-md-4 control-label" >Name</label>
+            <label for="name" class="col-md-4 control-label" >Full name</label>
 
             <div class="col-md-6">
 
                 @if(!empty($name))
-                <input id="name" type="text" class="form-control" name="name" placeholder="Enter your name" value="{{ $name }}" required autofocus>
+                <input id="name" type="text" class="form-control" name="name" placeholder="Enter your full name" value="{{ $name }}" required autofocus>
                 @else
-                <input id="name" type="text" class="form-control" name="name" placeholder="Enter your name" value="{{ old('name') }}" required autofocus>
+                <input id="name" type="text" class="form-control" name="name" placeholder="Enter your full name" value="{{ old('name') }}" required autofocus>
                 @endif
 
                 @if ($errors->has('name'))
@@ -72,10 +72,10 @@
         </div>
 
         <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
-            <label for="title" class="col-md-4 control-label">Job title</label>
+            <label for="title" class="col-md-4 control-label">Job title(s)</label>
 
             <div class="col-md-6">
-                <input id="title" type="text" class="form-control" name="title" placeholder="Enter your job title" value="{{ old('title') }}" required autofocus>
+                <input id="title" type="text" class="form-control" name="title" placeholder="Enter your job title(s)" value="{{ old('title') }}" required autofocus>
 
                 @if ($errors->has('title'))
                 <span class="help-block">
