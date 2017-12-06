@@ -7,8 +7,9 @@ use Illuminate\Http\Request as HttpRequest;
 
 class epicoApiController extends Controller
 {
-
-    protected static $url = "http://epico.dk/umbraco/surface/home/AllAdvertising";
+    
+    protected static $url_epico = "http://epico.dk/umbraco/surface/home/AllAdvertising";
+    protected static $url = "./files/AllAdvertising.json";
 
     //
     public function vacanciesApi()
