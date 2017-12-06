@@ -8,6 +8,8 @@ use Illuminate\Http\Request as HttpRequest;
 class epicoApiController extends Controller
 {
 
+    protected static $url = "http://epico.dk/umbraco/surface/home/AllAdvertising";
+
     //
     public function vacanciesApi()
     {
@@ -29,5 +31,9 @@ class epicoApiController extends Controller
       $xml = simplexml_load_file("http://mesterm.dk/simpleproxy/buddyshop_dk/contacts-feed");
 
       return view('contacts', compact('xml'));
+    }
+    
+    public function getVacancies(){
+        return json_decode(file_get_contents(self::$url), true);
     }
 }

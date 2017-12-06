@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Http\Controllers\epicoApiController;
 
 class vacancy extends Model
 {
@@ -13,13 +14,15 @@ class vacancy extends Model
     ];
     
     protected static $url = "http://localhost:1234/epico/public/files/AllAdvertising.json";
-    
+
     private static function getAll_Json(){
         return json_decode(file_get_contents(self::$url), true);
     }
 
     public static function get($id){
-        $all = self::getAll_Json();
+        $api = new epicoApiController();
+        
+        $all = $api->getVacancies();
         $num = count($all);
         $count = 0;
         do{
