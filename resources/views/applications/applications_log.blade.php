@@ -33,8 +33,8 @@
 
             
             Echo.private('chat.{{ $vacancy->Id . "." . $consultantId }}')
-            .listen('.messagePosted', (e) => {
-                alert('Hello');
+            .listen('messagePosted', (e) => {
+                alert('Hello Hello!');
             });
             
             

@@ -42985,7 +42985,7 @@ var Connector = function () {
             auth: {
                 headers: {}
             },
-            authEndpoint: '/broadcasting/auth',
+            authEndpoint: '/epico/public/broadcasting/auth',
             broadcaster: 'pusher',
             csrfToken: null,
             host: null,

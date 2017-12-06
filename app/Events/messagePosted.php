@@ -38,10 +38,6 @@ class messagePosted implements ShouldBroadcast
         return new PrivateChannel('chat.' . $this->vacancy . '.' . $this->consultantId);
     }
     
-    public function  broadcastAs(){
-        return 'chat.' . $this->vacancy . '.' . $this->consultantId;
-    }
-    
     public function broadcastWith() {
         return ['message' => $this->message, 'author' => $this->message->author];
     }
