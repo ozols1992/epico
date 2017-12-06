@@ -5,7 +5,7 @@
 <div id="app">
 <div class="container">
    <h3>{{ $vacancy->HeadLine }}</h3>
-<a href="./">View</a> - <a href="./apply">Apply</a>
+<a href="./apply">Apply</a>
 <div id="chat" >
     <msglog :messages="messages"></msglog>
     <msgform v-on:msgsent="addmsg"></msgform>
