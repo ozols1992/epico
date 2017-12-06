@@ -7,7 +7,10 @@
     <div class="contactmainflex">
         @foreach ($xml->ContactList->Contact as $contacts)
         <div class="contactfield">
-            <img class="contactimage" src="{!! $contacts->attributes()->image !!}">
+            <div class="imgwrapcontact">
+                <img class="contactimage" src="{!! $contacts->attributes()->image !!}">
+                <a class="contactbuttonphone">Contact</a>
+            </div>
             <div class="contactinfo">
                 <h4 class="contactname">{!! $contacts->attributes()->name !!}</h4>
                 <div class="informationflex">

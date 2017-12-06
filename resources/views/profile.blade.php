@@ -40,18 +40,18 @@
             <img src="img/user.png">
         </span>
         <h5>{{ Auth::user()->description }}</h5>
-        <div class="line"></div>
+        <div class="line2"></div>
 
         <span class="editiconemail">
             <img src="img/email.png">
         </span>
         <h5>{{ Auth::user()->email }}</h5>
-        <div class="line"></div>
+        <div class="line2"></div>
         <span class="phonenumber">
             <img src="img/phone.png">
         </span>
         <h5>{{ Auth::user()->phone_nr }}</h5>
-        <div class="line"></div>
+        <div class="line2"></div>
         <span class="adressicon">
             <img src="img/address.png">
         </span>
@@ -61,7 +61,7 @@
             <p>{{ Auth::user()->address }}</p>
             <p>{{ Auth::user()->zip_code }}</p>
         </div>
-        <div class="line"></div>
+        <div class="line2"></div>
     </div>
 
     @else

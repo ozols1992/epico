@@ -930,7 +930,7 @@ div.panel {
     font-family: avenirBlack;
 }
 
-.contactbutton {
+.contactbutton, .contactbuttonphone {
     height: 40px;
     margin-top: 30px;
     margin-bottom: auto;
@@ -953,7 +953,7 @@ div.panel {
     transition: all 0.2s ease-in-out;
 }
 
-.contactbutton:hover {
+.contactbutton:hover, .contactbuttonphone:hover {
     background-color: #890528;
     text-decoration: none;
     color: white;
@@ -965,6 +965,9 @@ div.panel {
     transition: all 0.2s ease-in-out;
 }
 
+.contactbuttonphone {
+    display: none;
+}
 
 .profileinformation{
     color: white;
@@ -1203,10 +1206,182 @@ div[class="col-md-6 col-md-offset-4"], div[class="col-md-8 col-md-offset-4"]{
     padding-top: 40px;
 }
 
-.line {
+.line2 {
     width: 100%;
     height: 2px;
     background-color: #595959;
     margin-top: 10px;
     margin-bottom: 15px;
+}
+
+.contactinfo>h4 {
+    font-family: avenirBlack;
+    font-size: 18px;
+}
+
+.contactinfo {
+    font-size: 14px;
+    font-family: avenirBook;
+}
+
+@media only screen and (max-width: 768px) {
+    .startlogo {
+        margin-top: 30px;
+        width: 70%;
+    }
+
+    .linkedin, .linkedin2 {
+        line-height: 5.4;
+        font-size: 20px;
+        height: 105px;
+    }
+
+    .starttop {
+        width: 100%;
+        left: 0%;
+    }
+
+    .accounttop1{
+        width: 102%;
+        left: -1%;
+        right: -1%
+    }
+
+    .accounttop2{
+        width: 102%;
+        left: -1%;
+        right: -1%;
+    }
+
+    .panel-body {
+        width: 90%;
+    }
+
+    .line {
+        width: 20%;
+        margin-top: 19px;
+    }
+
+    .radiosection{
+        flex-wrap: wrap;
+    }
+
+    .hoversection{
+        width: 100%;        
+    }
+
+    .toplogo {
+        width: 200px;
+        margin-top: 5px;
+    }
+
+    .or {
+        font-size: 22px;
+    }
+
+    .sitetitle {
+        font-size: 32px;
+        margin-top: 100px;
+    }
+
+    .jobtitle{
+        font-size: 20px;
+    }
+
+    .maininfo1{
+        font-size: 14px;
+    }
+    .job {
+        max-width: 400px;
+    }
+    .maininfo2 {
+        width: 110px;
+        font-size: 14px;
+    }
+    .accordionflex {
+        width: auto;
+    }
+
+    .jobbutton{
+        width: 300px;
+        margin: 10px;
+    }
+
+    .contactjob{        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;        
+    }
+
+    .responsivepic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .uploadinfo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .uploadinfo p {
+        margin-top: 70px;
+    }
+
+    .profiletop, .profiletop2{
+        width: 102%;
+        left: -1%;
+        right: -1%;
+    }
+
+    .profilename {
+        font-size: 24px;
+    }
+
+    .typeofwork, .currentstatusprofile {
+        font-size: 16px;
+    }
+
+    .typeofwork {
+        margin-right: 20px;
+    }
+
+    .editiconemail img, .editiconemail img, .phonenumber img {
+        width: 100%;
+    }
+
+    .adressicon img {
+        width: 75%;
+        margin: auto;
+        display: block;
+    }
+
+    .contactimage {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+    }
+    .contactinfo {
+        font-size: 12px;
+    }
+
+    .contactfield {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .imgwrapcontact {
+        margin: auto;
+    }
+
+    .contactbuttonphone{
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .contactbutton {
+        display: none;
+    }
 }
