@@ -38,7 +38,7 @@ return [
     'linkedin' => [
         'client_id' => '86xdte659eruyn',
         'client_secret' => '2aMhupDWyzhTOE0o',
-        'redirect' => 'http://127.0.0.1:8000/login/linkedin/callback',
+        'redirect' => 'http://web14.kris622z.iba-abakomp.dk/login/linkedin/callback',
         'scope' => 'r_basicprofile',
     ],
 
